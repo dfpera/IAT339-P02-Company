@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Qtea Style Guide</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style-guide.css">
+  </head>
+  <body>
+    <h1>Style Guide Template</h1>
+    <p>Style guide for Qtea.</p>
+    <nav class="main">
+      <p>
+        <a href="#interactive_elements">Interactive Elements</a> |
+        <a href="#text_elements">Text Elements</a> |
+        <a href="#combined_elements">Combined Elements</a> |
+        <a href="citations.html">Citations</a>
+      </p>
+    </nav>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <!-- Default Button styling section -->
+      <section>
+        <h2>Navigation Button</h2>
+        <h3>Rendered Element</h3>
+        <nav>
+          <a class="btn-nav" href="#">Nav Button</a>
+        </nav>
+        <h3>CSS Selector</h3>
+        <p>.btn-nav</p>
+        <h3>Sample Code</h3>
+        <code>&lt;a href="#" class="btn-nav"&gt;Default Button&lt;/a&gt;</code>
+      </section>
+      <section>
+        <h2>In-text link</h2>
+        <h3>Rendered Element</h3>
+        <p><a class="text-link" href="#">text link</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a class="text-link" href="#">Ut enim</a> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>CSS Selector</h3>
+        <p>.text-link</p>
+        <h3>Sample Code</h3>
+        <code>&lt;a href="#" class="text-link"&gt;Default Button&lt;/a&gt;</code>
+      </section>
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+        <h3>Rendered Element</h3>
+        <form action="#">
+          <input type="submit" class="btn-form-success" value="submit">
+          <p>or</p>
+          <button class="btn-form-reset">Reset</button>
+        </form>
+        <h3>CSS Selector</h3>
+        <p>.btn-form-success</p>
+        <p>or</p>
+        <p>.btn-form-reset</p>
+        <h3>Sample Code</h3>
+        <code>&lt;input type="submit" class="btn-form-success" value="submit"&gt;</code>
+        <p>or</p>
+        <code>&lt;button class="btn-form-reset"&gt;Reset&lt;/button&gt;</code>
+      </section>
+      <section>
+        <h2>Text Input Field</h2>
+        <h3>Rendered Element</h3>
+        <form action="#">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+        </form>
+        <h3>Sample Code</h3>
+        <code>&lt;label for="username"&gt;Username:&lt;/label&gt;<br>
+        &lt;input type="text" name="username"&gt;</code>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <section>
+        <h2>Headings</h2>
+        <h1>Page Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Sub Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section>
+        <h2>Paragraphs</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section>
+        <h2>Bulleted Lists</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Numbered Lists</h2>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <section>
+        <h2>Main Navigation</h2>
+        <h3>Rendered Element</h3>
+        <nav class="main">
+          <p>
+            <a href="#">page 1</a> |
+            <a href="#">page 2</a> |
+            <a href="#">page 3</a>
+          </p>
+        </nav>
+        <h3>Sample Code</h3>
+<pre><code>&lt;nav class="main"&gt;
+  &lt;p&gt;
+    &lt;a href="#"&gt;page 1&lt;/a&gt; |
+    &lt;a href="#"&gt;page 2&lt;/a&gt; |
+    &lt;a href="#"&gt;page 3&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/nav&gt;</code></pre>
+      </section>
+      <section>
+        <h2>Product Listing</h2>
+        <h3>Rendered Element</h3>
+
+        <h3>CSS Selector</h3>
+
+        <h3>Sample Code</h3>
+        <code>&lt;&gt;&lt;&gt;</code>
+      </section>
+      <section>
+        <h2>Grid Structure</h2>
+        <h3>CSS Selectors</h3>
+        <p>.col-SIZE-COLUMNS</p>
+        <p>SIZE: Indicates the breakpoint where the element must abide by class.<br>
+        COLUMNS: Indicates the number of columns out of 12 that the class shall fill up.</p>
+        <h3>Smart Watch</h3>
+        <p>Uses 4 columns for generating the layout.</p>
+        <section class="container">
+          <div class="row">
+            <div class="col-sm-12 col-med-12 col-lg-12">
+              <img class="placeholder" src="http://placehold.it/1920x200?text=4+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-med-6 col-lg-6">
+              <img class="placeholder" src="http://placehold.it/960x200?text=2+Columns" alt="Placeholder Image">
+            </div>
+            <div class="col-sm-6 col-med-6 col-lg-6">
+              <img class="placeholder" src="http://placehold.it/960x200?text=2+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 col-med-3 col-lg-3">
+              <img class="placeholder" src="http://placehold.it/480x200?text=1+Columns" alt="Placeholder Image">
+            </div>
+            <div class="col-sm-9 col-med-9 col-lg-9">
+              <img class="placeholder" src="http://placehold.it/1440x200?text=3+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+        </section>
+        <h3>Smartphone</h3>
+        <p>Uses 4 columns for generating the layout.</p>
+        <section class="container">
+          <div class="row">
+            <div class="col-sm-12 col-med-12 col-lg-12">
+              <img class="placeholder" src="http://placehold.it/1920x200?text=4+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-med-6 col-lg-6">
+              <img class="placeholder" src="http://placehold.it/960x200?text=2+Columns" alt="Placeholder Image">
+            </div>
+            <div class="col-sm-6 col-med-6 col-lg-6">
+              <img class="placeholder" src="http://placehold.it/960x200?text=2+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 col-med-3 col-lg-3">
+              <img class="placeholder" src="http://placehold.it/480x200?text=1+Columns" alt="Placeholder Image">
+            </div>
+            <div class="col-sm-9 col-med-9 col-lg-9">
+              <img class="placeholder" src="http://placehold.it/1440x200?text=3+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+        </section>
+        <h3>Gaming Console</h3>
+        <p>Uses 6 columns for generating the layout.</p>
+        <section class="container">
+          <div class="row">
+            <div class="col-sm-12 col-med-12 col-lg-12">
+              <img class="placeholder" src="http://placehold.it/1920x200?text=6+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-med-4 col-lg-4">
+              <img class="placeholder" src="http://placehold.it/640x200?text=3+Columns" alt="Placeholder Image">
+            </div>
+            <div class="col-sm-4 col-med-4 col-lg-4">
+              <img class="placeholder" src="http://placehold.it/640x200?text=3+Columns" alt="Placeholder Image">
+            </div>
+            <div class="col-sm-4 col-med-4 col-lg-4">
+              <img class="placeholder" src="http://placehold.it/640x200?text=3+Columns" alt="Placeholder Image">
+            </div>
+          </div>
+        </section>
+      </section>
+      <section>
+        <h2>Color Swatches</h2>
+        <h3>Main Colors</h3>
+        <div class="swatch main-nav">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Main Nav</strong><br>
+              rgb(27, 179, 186)<br>
+              #1BB3BA<br>
+            </p>
+          </div>
+        </div>
+        <div class="swatch background">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Background</strong><br>
+              rgb(255, 255, 255)<br>
+              #FFFFFF<br>
+            </p>
+          </div>
+        </div>
+        <div class="swatch panels">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Panels</strong><br>
+              rgb(255, 236, 196)<br>
+              #FFECC4<br>
+            </p>
+          </div>
+        </div>
+        <div class="swatch footer">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Footer</strong><br>
+              rgb(27, 179, 186)<br>
+              #1BB3BA<br>
+            </p>
+          </div>
+        </div>
+        <h3>Font Colors</h3>
+        <div class="swatch title">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Page Title</strong><br>
+              rgb(27, 179, 186)<br>
+              #1BB3BA<br>
+            </p>
+          </div>
+        </div>
+        <div class="swatch heading">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Heading</strong><br>
+              rgb(243, 117, 101)<br>
+              #F37565<br>
+            </p>
+          </div>
+        </div>
+        <div class="swatch sub-heading">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Sub Heading</strong><br>
+              rgb(0, 0, 0)<br>
+              #000000<br>
+            </p>
+          </div>
+        </div>
+        <div class="swatch font-dark">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Body Dark</strong><br>
+              rgb(0, 0, 0)<br>
+              #000000<br>
+            </p>
+          </div>
+        </div>
+        <div class="swatch font-light">
+          <div class="color"></div>
+          <div class="description">
+            <p><strong>Body Light</strong><br>
+              rgb(255, 255, 255)<br>
+              #FFFFFF<br>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+  </body>
+</html>

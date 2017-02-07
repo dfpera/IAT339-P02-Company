@@ -1,0 +1,24 @@
+nav.main {
+
+}
+
+nav.main > p {
+  font-family: $navigation-font;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  text-transform: lowercase;
+  color: $nav-color;
+}
+
+nav.main > p > a {
+  text-decoration: none;
+  color: $nav-color;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+nav.main > p > a:hover,
+nav.main > p > a:focus {
+  text-decoration: underline;
+  color: $btn-color;
+}

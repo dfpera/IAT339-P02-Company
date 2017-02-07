@@ -1,0 +1,79 @@
+body {
+  padding: 2.0rem;
+  background-color: $body-bg-color;
+}
+
+body > section > section:not([id]) {
+  margin: 1.0rem 0;
+  padding: 1.0rem 1.0rem 0;
+  border: #000 solid 0.1rem;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+  margin-bottom: 1.0rem;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 3.0rem;
+  margin-bottom: 0.5rem;
+  color: $h1-color;
+}
+
+h1.inverse {
+  color: $h1-color-inverse;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin-bottom: 0.75rem;
+  color: $h2-color;
+}
+
+h3 {
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+  color: $h3-color;
+}
+
+h1, h2, h3 {
+  font-family: $heading-font;
+  margin-top: 0;
+  text-transform: lowercase;
+}
+
+p {
+  font-family: $body-font;
+  line-height: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 1.0rem;
+}
+
+ul, ol {
+  font-family: $body-font;
+  margin-bottom: 2.0rem;
+}
+
+ul > li,
+ol > li {
+  margin-bottom: 0.25rem;
+}
+
+a.text-link {
+  color: $nav-color;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+a.text-link:hover,
+a.text-link:focus {
+  text-decoration: underline;
+  color: $font-dark;
+}
+
+form {
+  margin-bottom: 1.0rem;
+}

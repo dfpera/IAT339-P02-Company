@@ -1,0 +1,182 @@
+/*!
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+/*! Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Quicksand:400,700");
+/*! TEXT ELEMENTS -------------- */
+body {
+  padding: 2.0rem;
+  background-color: #FFF; }
+
+body > section > section:not([id]) {
+  margin: 1.0rem 0;
+  padding: 1.0rem 1.0rem 0;
+  border: #000 solid 0.1rem; }
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+  margin-bottom: 1.0rem;
+  display: inline-block; }
+
+h1 {
+  font-size: 3.0rem;
+  margin-bottom: 0.5rem;
+  color: #1BB3BA; }
+
+h1.inverse {
+  color: #FFF; }
+
+h2 {
+  font-size: 2.6rem;
+  margin-bottom: 0.75rem;
+  color: #F37565; }
+
+h3 {
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+  color: #000; }
+
+h1, h2, h3 {
+  font-family: "Quicksand", sans-serif;
+  margin-top: 0;
+  text-transform: lowercase; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 1.0rem; }
+
+ul, ol {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2.0rem; }
+
+ul > li,
+ol > li {
+  margin-bottom: 0.25rem; }
+
+a.text-link {
+  color: #1BB3BA;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; }
+
+a.text-link:hover,
+a.text-link:focus {
+  text-decoration: underline;
+  color: #000; }
+
+form {
+  margin-bottom: 1.0rem; }
+
+/*! -------------- TEXT ELEMENTS */
+/*! INTERACTIVE ELEMENTS --------------- */
+/*! Styling for the navigation button */
+.btn-nav,
+.btn-form-success,
+.btn-form-reset {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.0rem;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out; }
+
+.btn-nav {
+  color: #000;
+  background-color: #F2DC3E;
+  border-radius: 0.25em; }
+
+.btn-nav:hover, .btn-nav:focus {
+  background-color: #FFECC4;
+  color: #D28C41; }
+
+.btn-form-success {
+  color: #000;
+  background-color: #F2DC3E;
+  border-radius: 0.25em; }
+
+.btn-form-success:hover, .btn-form-success:focus {
+  background-color: #FFECC4;
+  color: #D28C41; }
+
+.btn-form-reset {
+  background-color: transparent;
+  color: #000; }
+
+.btn-form-reset:hover, .btn-form-reset:focus {
+  color: #D28C41; }
+
+/*! --------------- INTERACTIVE ELEMENTS */
+/*! COMBINED ELEMENTS ---------------- */
+nav.main > p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  text-transform: lowercase;
+  color: #1BB3BA; }
+
+nav.main > p > a {
+  text-decoration: none;
+  color: #1BB3BA;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; }
+
+nav.main > p > a:hover,
+nav.main > p > a:focus {
+  text-decoration: underline;
+  color: #000; }
+
+.swatch {
+  border: #888 solid 0.1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1.0rem;
+  margin-right: 1.0rem;
+  background-color: #FFF;
+  box-shadow: 0.2rem 0.2rem 0.2rem #888888; }
+
+.swatch > .color {
+  height: 2.5rem;
+  min-width: 10.0rem;
+  margin-top: 0.75rem; }
+
+.swatch > .description {
+  padding: 0.5rem 1.0rem; }
+
+/*! Swatch Colors */
+.swatch.title > .color {
+  background-color: #1BB3BA; }
+
+.swatch.heading > .color {
+  background-color: #F37565; }
+
+.swatch.sub-heading > .color {
+  background-color: #000; }
+
+.swatch.main-nav > .color {
+  background-color: #1BB3BA; }
+
+.swatch.background > .color {
+  background-color: #FFF; }
+
+.swatch.footer > .color {
+  background-color: #1BB3BA; }
+
+.swatch.font-dark > .color {
+  background-color: #000; }
+
+.swatch.font-light > .color {
+  background-color: #FFF; }
+
+.swatch.panels > .color {
+  background-color: #FFECC4; }
+
+/*! ---------------- COMBINED ELEMENTS */
