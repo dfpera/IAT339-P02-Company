@@ -1,24 +1,25 @@
-nav.main {
-
-}
-
-nav.main > p {
-  font-family: $navigation-font;
-  font-size: 1.5rem;
-  line-height: 1.7rem;
-  text-transform: lowercase;
-  color: $nav-color;
-}
-
-nav.main > p > a {
+/*! Styling for the navigation button */
+.btn-nav {
+  font-family: $buttons-font;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.0rem;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
   text-decoration: none;
-  color: $nav-color;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
-nav.main > p > a:hover,
-nav.main > p > a:focus {
-  text-decoration: underline;
+// Navigation Button
+.btn-nav {
   color: $btn-color;
+  background-color: $btn-nav-bg-color;
+  border-radius: 0.25em;
+}
+.btn-nav:hover, .btn-nav:focus {
+  background-color: #FFECC4;
+  color: #D28C41;
 }

@@ -1,22 +1,44 @@
-/*!
-  STYLE GUIDE STYLING
-  Default styling for the style guide
-*/
-
+/*! Qtea Styles P02: Company for IAT 339 */
 /*! Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Quicksand:400,700');
 
 @import "variables";
-/*! TEXT ELEMENTS -------------- */
-@import "base";
-/*! -------------- TEXT ELEMENTS */
+@import "normalize";
 
-/*! INTERACTIVE ELEMENTS --------------- */
-@import "modules/buttons";
-/*! --------------- INTERACTIVE ELEMENTS */
+/*! GRIDS ---------- */
+@import "grids";
+/*! ---------- GRIDS */
 
-/*! COMBINED ELEMENTS ---------------- */
-@import "modules/navigation";
-@import "modules/listing";
+/*! COLOR SWATCHES ---------- */
 @import "modules/swatches";
-/*! ---------------- COMBINED ELEMENTS */
+/*! ---------- COLOR SWATCHES */
+
+/*! BASE ELEMENTS ---------- */
+@import "base";
+/*! ---------- BASE ELEMENTS */
+
+/*! ---------- IMG/TEXT COMPONENTS */
+@import "modules/picture-description";
+@import "modules/customize-banner";
+@import "modules/articles";
+@import "modules/nutritional-info";
+/*! IMG/TEXT COMPONENTS ---------- */
+
+/*! NAVIGATION ---------- */
+@import "modules/main-navigation";
+@import "modules/navigation";
+@import "modules/breadcrumbs";
+/*! ---------- NAVIGATION */
+
+/*! FORMS ---------- */
+@import "modules/forms";
+@import "modules/login";
+@import "modules/search";
+@import "modules/reviews";
+@import "modules/cart";
+@import "modules/customization";
+/*! ---------- FORMS */
+
+/*! OTHER ---------- */
+@import "modules/map";
+/*! ---------- OTHER */

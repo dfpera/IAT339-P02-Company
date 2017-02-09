@@ -1,5 +1,4 @@
-/*! Styling for the navigation button */
-.btn-nav,
+/*! These are the base styles for all forms */
 .btn-form-success,
 .btn-form-reset {
   font-family: $buttons-font;
@@ -13,17 +12,6 @@
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-}
-
-// Navigation Button
-.btn-nav {
-  color: $btn-color;
-  background-color: $btn-nav-bg-color;
-  border-radius: 0.25em;
-}
-.btn-nav:hover, .btn-nav:focus {
-  background-color: #FFECC4;
-  color: #D28C41;
 }
 
 // Submit Button
