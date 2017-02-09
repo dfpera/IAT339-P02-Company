@@ -1,0 +1,18 @@
+/*! Styles used only in style guide */
+img.placeholder {
+  width: 100%;
+}
+
+p.TODO {
+  font-weight: bold;
+  font-size: 2.0rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: purple;
+}
+
+img.TODO {
+  border: purple solid thick;
+  max-width: 50.0rem;
+}

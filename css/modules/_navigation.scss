@@ -1,0 +1,25 @@
+/*! Styling for the navigation button */
+.btn-nav {
+  font-family: $buttons-font;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.0rem;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+// Navigation Button
+.btn-nav {
+  color: $btn-color;
+  background-color: $btn-nav-bg-color;
+  border-radius: 0.25em;
+}
+.btn-nav:hover, .btn-nav:focus {
+  background-color: #FFECC4;
+  color: #D28C41;
+}

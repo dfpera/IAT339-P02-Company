@@ -1,0 +1,35 @@
+/*! These are the base styles for all forms */
+.btn-form-success,
+.btn-form-reset {
+  font-family: $buttons-font;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.0rem;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+// Submit Button
+.btn-form-success {
+  color: $btn-color;
+  background-color: $btn-nav-bg-color;
+  border-radius: 0.25em;
+}
+.btn-form-success:hover, .btn-form-success:focus {
+  background-color: #FFECC4;
+  color: #D28C41;
+}
+
+// Reset Button
+.btn-form-reset {
+  background-color: $btn-nav-secondary-bg-color;
+  color: $btn-secondary-color;
+}
+.btn-form-reset:hover, .btn-form-reset:focus {
+  color: #D28C41;
+}
