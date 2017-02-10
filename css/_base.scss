@@ -1,19 +1,7 @@
+/*! Base element styles should go here */
 body {
-  padding: 2.0rem;
+  padding: 0 2.0rem;
   background-color: $body-bg-color;
-}
-
-body > section > section:not([id]) {
-  margin: 1.0rem 0;
-  padding: 1.0rem 1.0rem 0;
-  border: #000 solid 0.1rem;
-}
-
-section code {
-  background-color: #EEE;
-  padding: 0.5em 0.75em;
-  margin-bottom: 1.0rem;
-  display: inline-block;
 }
 
 h1 {

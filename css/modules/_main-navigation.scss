@@ -1,24 +1,127 @@
-nav.main {
-
+/*! Header and main navigation should go here */
+// TODO: Implement an active class for the menu
+// TODO: Add js to activate hamburger properly
+header {
+  position: relative;
+  padding: 0;
+  margin: 1.0rem 0 2.0rem;
+  width: 100%;
 }
 
-nav.main > p {
+// Icons
+header > .icons {
+  font-size: 3.0rem;
+}
+header > .icons > a {
+  color: $nav-color;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+header > .icons > a:hover,
+header > .icons > a:focus {
+  color: $btn-color;
+  cursor: pointer;
+}
+
+// Navigation Menu
+header > nav.main {
+  padding-top: 0.5rem;
   font-family: $navigation-font;
   font-size: 1.5rem;
   line-height: 1.7rem;
   text-transform: lowercase;
   color: $nav-color;
 }
-
-nav.main > p > a {
+header > nav.main > a {
   text-decoration: none;
   color: $nav-color;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
-
-nav.main > p > a:hover,
-nav.main > p > a:focus {
+header > nav.main > a:hover,
+header > nav.main > a:focus {
   text-decoration: underline;
   color: $btn-color;
+}
+
+// Small break point ONLY styles
+@media #{$small-break} {
+  // Logo
+  header > .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  // Icons
+  header > .icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  // Navigation Menu
+  header > nav.main {
+    padding-top: 0.5rem;
+    font-family: $navigation-font;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    text-transform: lowercase;
+    color: $nav-color;
+  }
+  header > nav.main > a {
+    padding: 0.25rem 0;
+    margin-bottom:0.25rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  header > nav.main > a:hover,
+  header > nav.main > a:focus {
+    background-color: $nav-bg-color;
+    border-bottom: #888 solid medium;
+    text-decoration: none;
+  }
+  header > nav.main > span {
+    display: none;
+  }
+}
+
+@media #{$medium-break} {
+  header {
+    margin-top: 2.0rem;
+  }
+  // Logo
+  header > .logo {
+    float: left;
+    padding-right: 1.0rem;
+  }
+
+  // Icons
+  header > .icons {
+    position: static;
+    float: right;
+  }
+  header > .icons > a.hamburger {
+    display: none;
+  }
+
+  // Navigation Menu
+  header > nav.main {
+    padding-top: 1.5rem; // HACK: Works but should ideally be aligned bottom, you notice the weirdness in the style guide
+    clear: both;
+  }
+  header > nav.main > a {
+    width: auto;
+    display: inline;
+  }
+  header > nav.main > span {
+    display: inline;
+  }
+}
+
+@media #{$large-break} {
+  // When there is enough space between Logo and Icons put menu in between
+  header > nav.main {
+    clear: none;
+  }
 }
