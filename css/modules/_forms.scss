@@ -33,3 +33,26 @@
 .btn-form-reset:hover, .btn-form-reset:focus {
   color: #D28C41;
 }
+
+.quantity-text-field{
+	width:100%;
+	border-radius: 3px;
+	background-color: $light-grey-bg;
+	border:1px solid #787878;
+	padding-top:0.10rem;
+	padding-bottom:0.10rem;
+	padding-left:0.5rem;
+}
+
+.basic-form{
+	background-color: $light-grey-bg;
+	padding: 1rem 1rem 1rem 1rem;
+	border-radius: 3px;
+	border:none;
+	margin-top:1rem;
+	width:100%;
+}
+
+.basic-form:not(:first-child){
+	/* margin-top:1rem; */
+}
