@@ -347,7 +347,27 @@
       </section>
       <section>
         <h2>Breadcrumbs - Navigation</h2>
-        <p class="TODO">This should be thought through a little more. THey should be visible on bigger screensizes, but mobile screens should only show limited information of the breadcrumb. The mockups show it at the bottom of the screen as "footer". But if you think of something better than go for it.</p>
+        <p>The breadcrumbs will only show on screens of medium size and larger.</p>
+        <p class="TODO">
+          Add small screen version of breadcrumbs.<br>
+          (The mockups show a fixed footer at the bottom of the screen was used. There might be a better way to implement this.)
+        </p>
+        <h3>Rendered Element</h3>
+        <nav class="breadcrumbs">
+          <a href="#">Home</a>
+          <span>&gt;</span>
+          <a href="#">Order Now</a>
+          <span>&gt;</span>
+          <a href="#">Milk Tea</a>
+        </nav>
+        <h3>Sample Code</h3>
+<pre><code>&lt;nav class=&quot;breadcrumbs&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;span&gt;&amp;gt;&lt;/span&gt;
+  &lt;a href=&quot;#&quot;&gt;Order Now&lt;/a&gt;
+  &lt;span&gt;&amp;gt;&lt;/span&gt;
+  &lt;a href=&quot;#&quot;&gt;Milk Tea&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
       </section>
       <section>
         <h2>Panels - Navigation</h2>

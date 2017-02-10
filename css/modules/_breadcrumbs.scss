@@ -1,1 +1,28 @@
 /*! Styles for breadcrumbs should go here */
+nav.breadcrumbs {
+  display: none;
+  margin-bottom: 1.0rem;
+  font-family: $navigation-font;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-transform: lowercase;
+  color: $btn-color;
+  width: 100%;
+}
+nav.breadcrumbs > a {
+  color: $btn-color;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+nav.breadcrumbs > a:hover,
+nav.breadcrumbs > a:focus {
+  color: $nav-color;
+  text-decoration: underline;
+}
+
+@media #{$medium-break} {
+  nav.breadcrumbs {
+    display: block;
+  }
+}
