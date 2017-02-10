@@ -1,0 +1,31 @@
+.product-list{
+	position:relative;
+}
+
+.product-list:after{
+	content: "";
+	clear:both;
+	border-bottom: 1px solid $border-lines;	
+}
+
+.product-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background: #333333;
+	opacity: 0;
+	transition: opacity 0.5s;
+	-o-transition: opacity 0.5;
+	
+}
+
+.product-list:hover, .product-list:focus{
+		.product-overlay{
+			opacity:0.8;
+		}
+}
+
+.img-container{
+	height:100px;
+	background-color:#333333;
+}

@@ -1,0 +1,20 @@
+.pop-up-bg{
+	position:fixed;
+	background:rgba(41,41,41,0.8);
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+}
+
+.cart-container{
+	position:relative;
+	border:5px;
+	margin:auto;
+}
+
+.cart{
+	background:$body-bg-color;
+	width:80em;
+	height:100px;
+}

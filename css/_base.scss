@@ -38,7 +38,21 @@ h3 {
   color: $h3-color;
 }
 
-h1, h2, h3 {
+h4{
+	font-size:1.3em;
+	margin-top:0.75em;
+	margin-bottom:0.25em;
+}
+
+h6{
+/* 	font-family: $body-font; */
+	font-size:0.8em;
+  line-height: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4 {
   font-family: $heading-font;
   margin-top: 0;
   text-transform: lowercase;
@@ -46,9 +60,9 @@ h1, h2, h3 {
 
 p {
   font-family: $body-font;
-  line-height: 1.4rem;
+  line-height: 1rem;
   margin-top: 0;
-  margin-bottom: 1.0rem;
+  margin-bottom: 0;
 }
 
 ul, ol {
