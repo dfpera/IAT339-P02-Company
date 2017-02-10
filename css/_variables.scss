@@ -6,6 +6,7 @@ $buttons-font: "Quicksand", sans-serif;
 
 // Colors
 $nav-color: #1BB3BA;
+$nav-bg-color: #EEEEEE;
 $footer-bg-color: #1BB3BA;
 $body-bg-color: #FFF;
 
@@ -23,3 +24,8 @@ $btn-nav-bg-color: #F2DC3E;
 $btn-nav-secondary-bg-color: transparent;
 $btn-color: #000;
 $btn-secondary-color: #000;
+
+// Breakpoints
+$small-break: "only screen and (max-width: 46em)"; // Less than
+$medium-break: "only screen and (min-width: 46em)"; // Greater than
+$large-break: "only screen and (min-width: 60em)"; // Greater than
