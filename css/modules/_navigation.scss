@@ -23,3 +23,46 @@
   background-color: #FFECC4;
   color: #D28C41;
 }
+
+// PANEL STYLINGS
+nav.panels {
+  width: 100%;
+}
+nav.panels::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav.panels > div {
+  margin-bottom: 1.5rem;
+}
+nav.panels a {
+  position: relative;
+  display: block;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+nav.panels a:hover,
+nav.panels a:focus {
+  opacity: 0.5;
+}
+nav.panels a > img {
+  width: 100%;
+}
+nav.panels a > p {
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  bottom: 0.25rem;
+  width: 100%;
+  font-family: $navigation-font;
+  text-align: right;
+  font-size: 2.0rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  padding: 0.75rem 0.75rem;
+  margin: 0;
+  background: $label-bg-color;
+  color: $label-color;
+  opacity: .8;
+}
