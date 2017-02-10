@@ -298,23 +298,52 @@
       </section>
       <section>
         <h2>Main Navigation - Navigation</h2>
-        <p class="TODO">Add descriptive text of how to use component. And implement hamburger version.</p>
+        <p>This is the main navigation that is applied to every page of the website. It implements the logo, main menu, and main icons for search and shopping cart.</p>
+        <p class="TODO">
+          Add Hamburger js.<br>
+          Add link back to home page.<br>
+          Add active link for page actively on.
+        </p>
         <h3>Rendered Element</h3>
-        <nav class="main">
-          <p>
-            <a href="#">page 1</a> |
-            <a href="#">page 2</a> |
-            <a href="#">page 3</a>
-          </p>
-        </nav>
+        <header>
+          <div class="logo">
+            <h1><span class="capitalize">Qtea</span></h1>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a class="hamburger" href="#"><i class="fa fa-bars"></i></a>
+          </div>
+          <nav class="main">
+            <a href="#">Order&nbsp;Now</a>
+            <span>|</span>
+            <a href="#">Events&nbsp;&amp;&nbsp;News</a>
+            <span>|</span>
+            <a href="#">Find&nbsp;Us</a>
+            <span>|</span>
+            <a href="#">About&nbsp;Us</a>
+          </nav>
+        </header>
         <h3>Sample Code</h3>
-<pre><code>&lt;nav class="main"&gt;
-  &lt;p&gt;
-    &lt;a href="#"&gt;page 1&lt;/a&gt; |
-    &lt;a href="#"&gt;page 2&lt;/a&gt; |
-    &lt;a href="#"&gt;page 3&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/nav&gt;</code></pre>
+<pre><code>&lt;header&gt;
+  &lt;div class=&quot;logo&quot;&gt;
+    &lt;h1&gt;&lt;span class=&quot;capitalize&quot;&gt;Qtea&lt;/span&gt;&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;icons&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class=&quot;hamburger&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;nav class=&quot;main&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Order&amp;nbsp;Now&lt;/a&gt;
+    &lt;span&gt;|&lt;/span&gt;
+    &lt;a href=&quot;#&quot;&gt;Events&amp;nbsp;&amp;amp;&amp;nbsp;News&lt;/a&gt;
+    &lt;span&gt;|&lt;/span&gt;
+    &lt;a href=&quot;#&quot;&gt;Find&amp;nbsp;Us&lt;/a&gt;
+    &lt;span&gt;|&lt;/span&gt;
+    &lt;a href=&quot;#&quot;&gt;About&amp;nbsp;Us&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
       </section>
       <section>
         <h2>Breadcrumbs - Navigation</h2>
