@@ -26,7 +26,7 @@
 	.hide-small{
 	 display:none;
 	}
-	.add-margin-bot{
+	.add-margin-top{
 		padding-bottom:2rem;	
 	}
 
@@ -40,7 +40,7 @@
 	.hide-small{
 	 display:none;
 	}
-	.add-margin-bot{
+	.add-margin-top{
 		margin-bottom:2rem;	
 	}
 }
@@ -53,12 +53,14 @@
 	.hide-small{
 	 display:block;
 	}
-	.add-margin-bot{
+	.add-margin-top{
 		margin-bottom:0rem;	
 	}
 }
 
-
+#modal{
+	display:none;
+}
 
 
 .cart-content{

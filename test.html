@@ -49,7 +49,9 @@
         <h6>ext ever since the 1500s, when an unknown printer took a galley of type</h6>
       </div>
     </div>
-   <!--
+    
+    <a href="#" id="modal-open" class="btn-form-success">Hello</a>
+    
  <div class="pop-up-bg" id="modal">
       <div class="cart-container">
         <div class="cart-content">
@@ -70,24 +72,26 @@
             </div>
           </div>
           <div class="row product-list">
-            <div class="col-lg-2 col-med-4 col-sm-3">
+            <div class="col-lg-2 col-med-4 col-sm-4">
               <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg" class="img-container">
             </div>
-            <div class="col-lg-4 col-med-8 col-sm-9">
+            <div class="col-lg-4 col-med-8 col-sm-8">
               <h4>Milk Tea</h4>
               <h6>Drink Flavour: Strawberry</h6>
               <h6>Ice Level: 50%</h6>
               <h6>Sweetness: 50%</h6>
               <h6>Toppings: Tapioca Pearls</h6>
             </div>
-            <div class="col-lg-2 col-med-2 col-sm-2">
-              <h5>$5.99</h5>
-            </div>
-            <div class="col-lg-2 col-med-2 col-sm-2">
-              <input type="text" class="quantity-text-field" value="1">
-            </div>
-            <div class="col-lg-2 col-med-8 col-sm-8">
-              <h5 class="text-right">$5.99</h5>
+            <div class="add-margin-top">
+	            <div class="col-lg-2 col-med-2 col-sm-2">
+	              <h5>$5.99</h5>
+	            </div>
+	            <div class="col-lg-2 col-med-2 col-sm-2">
+	              <input type="text" class="quantity-text-field" value="1">
+	            </div>
+	            <div class="col-lg-2 col-med-8 col-sm-8">
+	              <h5 class="text-right">$5.99</h5>
+	            </div>
             </div>
           </div>
           <div class="row">
@@ -109,8 +113,22 @@
         </div>
       </div>
     </div>
--->
     
+    <script>
+	    document.getElementById('modal-open').onclick=function(){
+		    document.getElementById('modal').style.display='block';
+	    };
+	    document.getElementById('cancel').onclick=function(){
+		    document.getElementById('modal').style.display='none';
+	    };
+	    
+    </script>
+ <!--
+   <div class="row">
+    
+    
+    </div>
+-->
     
   </body>
 </html>

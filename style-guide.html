@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style-guide.css">
+   
   </head>
   <body>
     <header>
@@ -270,7 +271,49 @@
       </section>
       <section>
         <h2>Picture/Description - Img/Text Components</h2>
-        <img src="img/style-guide/picture_description.jpg" alt="" class="TODO">
+				<div class="row product-list">
+				  <div class="product-overlay"></div>
+				  <div class="col-lg-2 col-med-2 col-sm-5">
+				      <img src="http://katjuju.com/wp-content/uploads/2012/09/bubble-tea.gif" class="img-container">
+				  </div>
+				  <div class="col-lg-4 col-med-10 col-sm-7">
+				    <h4>Bubble Tea</h4>
+				    <h6>ext ever since the 1500s, when an unknown printer took a galley of type ext ever since the 1500s, when an unknown printer took a galley of type</h6>
+				  </div>
+				</div>
+				<div class="row product-list">
+					<div class="product-overlay"></div>
+				  <div class="col-lg-2 col-med-2 col-sm-5">
+				      <img src="http://katjuju.com/wp-content/uploads/2012/09/bubble-tea.gif" class="img-container">
+				  </div>
+				  <div class="col-lg-4 col-med-10 col-sm-7">
+				    <h4>Product title</h4>
+				    <h6>ext ever since the 1500s, when an unknown printer took a galley of typeext ever since the 1500s, when an unknown printer took a galley of type</h6>
+				  </div>
+				</div>
+				<code>
+					&lt;div class=&quot;row product-list&quot;&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;h4&gt;Bubble Tea&lt;/h4&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />
+					&lt;/div&gt;<br />
+					&lt;div class=&quot;row product-list&quot;&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;h4&gt;Product title&lt;/h4&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />
+					&lt;/div&gt; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+					<br />
+				</code>        
       </section>
       <section>
         <h2>Nutritional Information - Img/Text Components</h2>
@@ -447,7 +490,45 @@
       </section>
       <section>
         <h2>Login - Forms</h2>
-        <p class="TODO">Haven't thought of this yet so design however fits best.</p>
+				<div class="row">
+					<div class="login-form-container">
+						<div class="login-form-content">
+							<h2 class="text-center">Hello <span class="capitalize">Qtea</span></h2>
+							<form>
+								<input type="text" class="basic-form" placeholder="Username">
+								<input type="password" class="basic-form" placeholder="Password">
+								<input type="submit" class="btn-form-success" value="Login">
+							</form>
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<h6>Not a Member yet?<a href="#" class="text-link"> Join Us</a></h6>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<h6 class="text-right"><a href="#" class="text-link">Forget Password?</a></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			  
+			  <code>
+					&lt;div class=&quot;row&quot;&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;login-form-container&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;div class=&quot;login-form-content&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;h2 class=&quot;text-center&quot;&gt;Hello &lt;span class=&quot;capitalize&quot;&gt;Qtea&lt;/span&gt;&lt;/h2&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;form&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;input type=&quot;text&quot; class=&quot;basic-form&quot; placeholder=&quot;Username&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;input type=&quot;password&quot; class=&quot;basic-form&quot; placeholder=&quot;Password&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;input type=&quot;submit&quot; class=&quot;btn-form-success&quot; value=&quot;Login&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;/form&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-6 col-md-6 col-sm-6&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;Not a Member yet?&lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt; Join Us&lt;/a&gt;&lt;/h6&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-6 col-md-6 col-sm-6&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;h6 class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;Forget Password?&lt;/a&gt;&lt;/h6&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />
+					&lt;/div&gt;<br />
+			  </code>
       </section>
       <section>
         <h2>Customize Drink - Forms</h2>
@@ -455,8 +536,134 @@
       </section>
       <section>
         <h2>Cart - Forms</h2>
-        <p class="TODO">Should implement picture/description component then with additional information about pricing and totals. Including final purchase button.</p>
-        <p class="TODO">Here we should be choosing a location to pick up, or choosing delivery as well. This is something I missed while making the mockups.</p>
+        <a href="javascript:void(0);" id="modal-open" class="btn-form-success">open cart</a>
+				<div class="pop-up-bg" id="modal">
+			    <div class="cart-container">
+			      <div class="cart-content">
+			        <div class="row description-title">
+			          <div class="col-lg-6 col-med-6 col-sm-6">
+			            <h4>Shopping Cart</h4>
+			          </div>
+			          <div class="hide-small">
+			            <div class="col-lg-2 col-med-2 col-sm-3">
+			              <h5>Price</h5>
+			            </div>
+			            <div class="col-lg-2 col-med-2 col-sm-3">
+			              <h5>Quantity</h5>
+			            </div>
+			            <div class="col-lg-2 col-med-2 col-sm-3">
+			              <h5 class="text-right">Total</h5>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="row product-list">
+			          <div class="col-lg-2 col-med-4 col-sm-4">
+			            <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg" class="img-container">
+			          </div>
+			          <div class="col-lg-4 col-med-8 col-sm-8">
+			            <h4>Milk Tea</h4>
+			            <h6>Drink Flavour: Strawberry</h6>
+			            <h6>Ice Level: 50%</h6>
+			            <h6>Sweetness: 50%</h6>
+			            <h6>Toppings: Tapioca Pearls</h6>
+			          </div>
+			          <div class="add-margin-top">
+			            <div class="col-lg-2 col-med-2 col-sm-2">
+			              <h5>$5.99</h5>
+			            </div>
+			            <div class="col-lg-2 col-med-2 col-sm-2">
+			              <input type="text" class="quantity-text-field" value="1">
+			            </div>
+			            <div class="col-lg-2 col-med-8 col-sm-8">
+			              <h5 class="text-right">$5.99</h5>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="btn-checkout text-right">
+			            <h6>Tax(10%) $0.59</h6>
+			            <h4>Grand Total $6.50</h4>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="btn-checkout">	   
+			          	<div class="col-lg-6 col-md-6">
+			              <button id="cancel" class="btn-form-reset">Cancel</button>
+			          	</div>
+			          	<div class="col-lg-6 col-md-6">
+			            	<input type="submit" class="btn-form-success" value="Proceed to Checkout">
+			          	</div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  
+			  <code>
+					&lt;a href=&quot;javascript:void(0);&quot; id=&quot;modal-open&quot; class=&quot;btn-form-success&quot;&gt;open cart&lt;/a&gt;<br />
+					&lt;div class=&quot;pop-up-bg&quot; id=&quot;modal&quot;&gt;<br />
+					&nbsp;&nbsp;&lt;div class=&quot;cart-container&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;div class=&quot;cart-content&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;div class=&quot;row description-title&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-6 col-med-6 col-sm-6&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Shopping Cart&lt;/h4&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;hide-small&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-3&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h5&gt;Price&lt;/h5&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-3&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h5&gt;Quantity&lt;/h5&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-3&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h5 class=&quot;text-right&quot;&gt;Total&lt;/h5&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;div class=&quot;row product-list&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-4 col-sm-4&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-4 col-med-8 col-sm-8&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Milk Tea&lt;/h4&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;Drink Flavour: Strawberry&lt;/h6&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;Ice Level: 50%&lt;/h6&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;Sweetness: 50%&lt;/h6&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;Toppings: Tapioca Pearls&lt;/h6&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;add-margin-top&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-2&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h5&gt;$5.99&lt;/h5&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-2&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;input type=&quot;text&quot; class=&quot;quantity-text-field&quot; value=&quot;1&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-8 col-sm-8&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h5 class=&quot;text-right&quot;&gt;$5.99&lt;/h5&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;div class=&quot;row&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;btn-checkout text-right&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;Tax(10%) $0.59&lt;/h6&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Grand Total $6.50&lt;/h4&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;div class=&quot;row&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;btn-checkout&quot;&gt; &nbsp; &nbsp;&nbsp;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-6 col-md-6&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;button id=&quot;cancel&quot; class=&quot;btn-form-reset&quot;&gt;Cancel&lt;/button&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-6 col-md-6&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;input type=&quot;submit&quot; class=&quot;btn-form-success&quot; value=&quot;Proceed to Checkout&quot;&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />
+					&lt;/div&gt;<br />
+			  </code>
+
       </section>
       <section>
         <h2>Review - Forms</h2>
@@ -471,6 +678,16 @@
         <p class="TODO">This is a google map.</p>
       </section>
     </section>
+    
+    
+   <script>
+		document.getElementById('modal-open').onclick=function(){
+			document.getElementById('modal').style.display='block';
+		};
+		document.getElementById('cancel').onclick=function(){
+			document.getElementById('modal').style.display='none';
+		};
+   </script>
     <!-- END OTHER -->
   </body>
 </html>
