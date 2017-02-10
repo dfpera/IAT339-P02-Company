@@ -8,6 +8,7 @@ nav.breadcrumbs {
   text-transform: lowercase;
   color: $btn-color;
   width: 100%;
+  min-height: 1.5rem;
 }
 nav.breadcrumbs > a {
   color: $btn-color;
