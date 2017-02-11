@@ -4,8 +4,11 @@
   font-family: $buttons-font;
   text-transform: uppercase;
   display: inline-block;
-  padding: 0.5rem 0.75rem;
-  margin-bottom: 1.0rem;
+  padding: 0.75rem 0.75rem;
+  width:100%;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+  padding:1rem 1rem 1rem 1rem;
   border: none;
   font-weight: bold;
   letter-spacing: 0.15rem;
@@ -16,7 +19,8 @@
 
 // Submit Button
 .btn-form-success {
-  color: $btn-color;
+  /* color: $btn-color; */
+  color: #bc8412;
   background-color: $btn-nav-bg-color;
   border-radius: 0.25em;
 }
@@ -38,7 +42,7 @@
 	width:100%;
 	border-radius: 3px;
 	background-color: $light-grey-bg;
-	border:1px solid #787878;
+	border:1px solid #d6d6d6;
 	padding-top:0.10rem;
 	padding-bottom:0.10rem;
 	padding-left:0.5rem;
@@ -48,8 +52,9 @@
 	background-color: $light-grey-bg;
 	padding: 1rem 1rem 1rem 1rem;
 	border-radius: 3px;
-	border:none;
-	margin-top:1rem;
+	border:1px solid #d6d6d6;
+	margin-top:0.5rem;
+	margin-bottom:0.5rem;
 	width:100%;
 }
 
