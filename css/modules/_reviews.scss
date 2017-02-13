@@ -2,3 +2,34 @@
 .review{
 	color: $light-grey-bg;
 }
+
+.review-active{
+	color:#F2DC3E;
+}
+
+.new-review{
+	border-radius:5px;
+	border-bottom-left-radius: 0px;
+	padding-bottom:1.5rem;
+	
+	/* margin-bottom:0.5rem; */
+	padding-top:1.5rem;
+	padding-left:1.5rem;
+	padding-right:1.5rem;
+	background:$light-grey-bg;
+	/* border:1px solid #d6d6d6; */
+}
+
+.new-review-container{
+	margin-top:1rem;
+}
+
+.triangle-topleft{
+	width: 0;
+	height: 0;
+	border-top: 10px solid $light-grey-bg;
+	border-right: 15px solid transparent;
+	border-bottom-left-radius: 5px;
+}
+
+

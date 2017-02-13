@@ -10,6 +10,7 @@
   
   
 
+<!--
   <div class="row">
   	<div class="login-form-container">
   		<div class="login-form-content">
@@ -30,7 +31,7 @@
   	</div>
   </div>
 
-<!--  
+ 
     <div class="row product-list">
       <div class="product-overlay"></div>
       <div class="col-lg-1 col-med-3 col-sm-1">
@@ -75,7 +76,7 @@
           </div>
           <div class="row product-list">
             <div class="col-lg-2 col-med-4 col-sm-4">
-              <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg" class="img-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bubble_Tea.png/150px-Bubble_Tea.png" class="img-container">
             </div>
             <div class="col-lg-4 col-med-8 col-sm-8">
               <h4>Milk Tea</h4>
@@ -115,15 +116,76 @@
         </div>
       </div>
     </div>
--->
     
+-->
     <div class="row">
-    	<h3><span class="capitalize">Qtea</span> Reviews <span class="fa fa-star review"aria-hidden="true"></span><span class="fa fa-star review"aria-hidden="true"></span><span class="fa fa-star review"aria-hidden="true"></span><span class="fa fa-star review"aria-hidden="true"></span><span class="fa fa-star review"aria-hidden="true"></span></h3>
-    	<h4>Jay Jay Chu</h4>
-    	<p>This is the best bubble tea in the world wooohh</p>
+    	<h3>
+    		<span class="capitalize">Qtea</span> Reviews
+    		<span class="review-active">
+		    	<span class="fa fa-star"aria-hidden="true"></span>
+		    	<span class="fa fa-star"aria-hidden="true"></span>
+		    	<span class="fa fa-star"aria-hidden="true"></span>
+		    	<span class="fa fa-star"aria-hidden="true"></span>
+	    	</span>
+	    	<span class="fa fa-star review"aria-hidden="true"></span>
+    	</h3>
+    	<div class="new-review-container">
+	    	<div class="new-review">
+		    	<h4>
+		    		<span class="capitalize">Jay Jay Chu</span>
+			    	<span class="review-active">
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+			    	</span>
+			    	<span class="fa fa-star review"aria-hidden="true"></span>
+		    	</h4>
+		    	<p>This is the best bubble tea in the world wooohh survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+	    	</div>
+	    	<div class="triangle-topleft"></div>
+    	</div>
+    	
+    	<div class="new-review-container">
+	    	<div class="new-review">
+		    	<h4>
+		    		<span class="capitalize">PK Subban</span>
+			    	<span class="review-active">
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	<span class="fa fa-star"aria-hidden="true"></span>
+			    	</span>
+			    	<span class="fa fa-star review"aria-hidden="true"></span>
+		    	</h4>
+		    	<p>This is the best bubble tea in the world wooohh survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+	    	</div>
+	    	<div class="triangle-topleft"></div>
+    	</div>
+    	
+    	<input type="submit" class="btn-form-success" value="view more reviews">
+    	
+    	<div class="review-form">
+    		<h4 class="capitalize">Leave a Review</h4>
+	    	<textarea rows="10" class="basic-form" placeholder="Write your own review"></textarea>
+	    	<div class="post-btn-container">
+		    	<div class="comment-postsection">
+		    		<a href="#" class="btn-form-success"><span class="fa fa-paper-plane" aria-hidden="true"></span>Post Review</a>
+		    	</div>
+	    	</div>
+    	</div>
     	
     
     </div>
+
+   <script>
+		document.getElementById('modal-open').onclick=function(){
+			document.getElementById('modal').style.display='block';
+		};
+		document.getElementById('cancel').onclick=function(){
+			document.getElementById('modal').style.display='none';
+		};
+   </script>
     
   </body>
 </html>
