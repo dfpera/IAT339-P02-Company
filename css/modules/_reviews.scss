@@ -1,7 +1,9 @@
 /*! Styles for reviewing products should go here */
 .review{
-	color: $light-grey-bg;
+	color: #d6d6d6;
 }
+
+
 
 .review-active{
 	color:#F2DC3E;
@@ -11,7 +13,6 @@
 	border-radius:5px;
 	border-bottom-left-radius: 0px;
 	padding-bottom:1.5rem;
-	
 	/* margin-bottom:0.5rem; */
 	padding-top:1.5rem;
 	padding-left:1.5rem;
@@ -32,4 +33,39 @@
 	border-bottom-left-radius: 5px;
 }
 
+.fa-paper-plane{
+	padding-right:0.5rem;
+}
 
+
+
+.review-post{
+	color:#d6d6d6;
+	padding-top:1rem;
+}
+
+
+.review-post > span:first-child:hover{
+	font-size:2.5rem;
+	color:#F2DC3E;
+}
+
+.review-post > span.fa.fa-star:nth-child(2):hover{
+	font-size:2.5rem;
+	color:#F2DC3E;
+}
+
+.review-post span.fa.fa-star:nth-child(3):hover{
+	font-size:2.5rem;
+	color:#F2DC3E;
+}
+
+.review-post span.fa.fa-star:nth-child(4):hover{
+	font-size:2.5rem;
+	color:#F2DC3E;
+}
+
+.review-post span.fa.fa-star:last-child:hover{
+	font-size:2.5rem;
+	color:#F2DC3E;
+}
