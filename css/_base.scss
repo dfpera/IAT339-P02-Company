@@ -1,7 +1,25 @@
 /*! Base element styles should go here */
 body {
-  padding: 0 2.0rem;
   background-color: $body-bg-color;
+}
+
+
+@media #{$small-break}{
+	body{
+	padding: 0 0.5rem;
+	}
+}
+
+@media #{$medium-break}{
+	body{
+	 padding: 0 1.5rem;
+	}
+}
+
+@media #{$large-break}{
+	body{
+	 padding: 0 2.0rem;
+	}
 }
 
 h1 {

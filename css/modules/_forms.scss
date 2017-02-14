@@ -58,6 +58,39 @@
 	width:100%;
 }
 
-.basic-form:not(:first-child){
-	/* margin-top:1rem; */
+
+
+.review-form{
+	position:relative;
+	margin-top:1.5rem;
 }
+
+.post-btn-container{
+	
+	/* bottom:0; */
+	top:0;
+	right:0px;
+	width:auto;	
+	/* padding:1rem; */
+	text-align:center;
+	
+}
+
+@media #{$small-break}{
+	.post-btn-container{
+		width:100%;
+	}
+}
+
+@media #{$medium-break}{
+	.post-btn-container{
+		width:50%;
+	}
+}
+
+@media #{$large-break}{
+	.post-btn-container{
+		width:20%;
+	}
+}
+
