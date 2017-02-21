@@ -1,1 +1,21 @@
 /*! Styles for drink customizations should go here */
+.panel-holder{
+	overflow-x: scroll;
+	overflow-y:none;
+	width:100%;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	
+
+}
+
+
+.panel-container{
+	position:relative;
+	padding:1rem;
+	border-radius:5px;
+	background-color:$light-grey-bg;
+	border:1px solid $medium-grey-bg;
+	height:250px;
+
+}
