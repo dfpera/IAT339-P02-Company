@@ -6,20 +6,20 @@
 .description-title:after{
 	content: "";
 	clear:both;
-	border-bottom: 1px solid $border-lines;	
+	border-bottom: 1px solid $border-lines;
 	padding-top:1rem;
 }
 
 .product-list{
 	position:relative;
 	padding-top:1rem;
-	
+
 }
 
 .product-list:after{
 	content: "";
 	clear:both;
-	border-bottom: 1px solid $border-lines;	
+	border-bottom: 1px solid $border-lines;
 	padding-top:1rem;
 }
 
@@ -32,7 +32,7 @@
 	opacity: 0;
 	transition: opacity 0.5s;
 	-o-transition: opacity 0.5;
-	
+
 }
 
 .product-list:hover, .product-list:focus{
@@ -50,9 +50,9 @@
 	/* height:100px; */
 	text-align:center;
 	display: block;
-	/* width:100%; */
+	max-width:100%; 
 	max-height: 100px;
 	height:auto;
 	margin:auto;
-	
+
 }
