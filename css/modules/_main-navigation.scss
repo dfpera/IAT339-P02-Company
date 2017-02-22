@@ -43,13 +43,15 @@ header > nav.main > a:focus {
   text-decoration: underline;
   color: $btn-color;
 }
+header > .icons > a.activeIcon {
+  color: $btn-color;
+}
 
 // Small break point ONLY styles
 @media #{$small-break} {
   // Logo
   header > .logo {
     width: 100%;
-    text-align: center;
   }
 
   // Icons
@@ -74,6 +76,9 @@ header > nav.main > a:focus {
     display: block;
     width: 100%;
     text-align: center;
+    border-bottom: #FFF solid medium;
+    transition: background-color 0.5s ease-out;
+    transition: border-color 0.5s ease-out;
   }
   header > nav.main > a:hover,
   header > nav.main > a:focus {
@@ -107,6 +112,7 @@ header > nav.main > a:focus {
 
   // Navigation Menu
   header > nav.main {
+    display: block !important;
     padding-top: 1.5rem; // HACK: Works but should ideally be aligned bottom, you notice the weirdness in the style guide
     clear: both;
   }

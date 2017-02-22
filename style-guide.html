@@ -353,7 +353,6 @@
         <h2>Main Navigation - Navigation</h2>
         <p>This is the main navigation that is applied to every page of the website. It implements the logo, main menu, and main icons for search and shopping cart.</p>
         <p class="TODO">
-          Add Hamburger js.<br>
           Add link back to home page.<br>
           Add active link for page actively on.
         </p>
@@ -365,7 +364,7 @@
           <div class="icons">
             <a href="#"><i class="fa fa-search"></i></a>
             <a href="#"><i class="fa fa-shopping-cart"></i></a>
-            <a class="hamburger" href="#"><i class="fa fa-bars"></i></a>
+            <a class="hamburger activeIcon" href="#"><i class="fa fa-bars"></i></a>
           </div>
           <nav class="main">
             <a href="#">Order&nbsp;Now</a>
@@ -377,7 +376,7 @@
             <a href="#">About&nbsp;Us</a>
           </nav>
         </header>
-        <h3>Sample Code</h3>
+        <h3 class="clearfix">Sample Code</h3>
 <pre><code>&lt;header&gt;
   &lt;div class=&quot;logo&quot;&gt;
     &lt;h1&gt;&lt;span class=&quot;capitalize&quot;&gt;Qtea&lt;/span&gt;&lt;/h1&gt;
@@ -400,10 +399,9 @@
       </section>
       <section>
         <h2>Breadcrumbs - Navigation</h2>
-        <p>The breadcrumbs will only show on screens of medium size and larger.</p>
+        <p>The breadcrumbs will display as a drop down on small screens.</p>
         <p class="TODO">
-          Add small screen version of breadcrumbs.<br>
-          (The mockups show a fixed footer at the bottom of the screen was used. There might be a better way to implement this.)
+          Add small screen version of breadcrumbs.
         </p>
         <h3>Rendered Element</h3>
         <nav class="breadcrumbs">
@@ -412,6 +410,8 @@
           <a href="#">Order Now</a>
           <span>&gt;</span>
           <a href="#">Milk Tea</a>
+          <span>&gt;</span>
+          <a href="#">Customization</a>
         </nav>
         <h3>Sample Code</h3>
 <pre><code>&lt;nav class=&quot;breadcrumbs&quot;&gt;
@@ -526,6 +526,13 @@
       <section>
         <h2>Search - Forms</h2>
         <p class="TODO">I think this should be a modal and the listings should use picture/description component.</p>
+        <h3>Rendered Element</h3>
+        <header>
+          <div class="icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </div>
+        </header>
+        <h3>Sample Code</h3>
       </section>
       <section>
         <h2>Login - Forms</h2>
@@ -718,7 +725,7 @@
     <section id="other">
       <section>
         <h2>Contact Map - Other</h2>
-        <p class="TODO">This is a google map.</p>
+        <p class="TODO">Style nicely and add sample code.</p>
         <h3>Rendered Element</h3>
         <div class="findusMap">
           <div class="col-med-6 col-lg-6">

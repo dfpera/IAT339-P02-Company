@@ -29,6 +29,18 @@ var locations = [
 
 // Main Loop
 $(function() {
+  // Menu
+  var hamburgers = $('header > .icons > .hamburger');
+  hamburgers.removeClass('activeIcon');
+  hamburgers.parents('header').children('nav.main').hide();
+  // Hamburger listener
+  hamburgers.click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass('activeIcon');
+    $(this).parents('header').children('nav.main').slideToggle('slow');
+  });
+
+
   // Old js
   document.getElementById('modal-open').onclick=function(){
     document.getElementById('modal').style.display='block';
