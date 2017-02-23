@@ -12,15 +12,20 @@ header {
 header > .icons {
   font-size: 3.0rem;
 }
-header > .icons > a {
+header > .icons i {
   color: $nav-color;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
-header > .icons > a:hover,
-header > .icons > a:focus {
+header > .icons i:hover,
+header > .icons i:focus {
   color: $btn-color;
   cursor: pointer;
+}
+header > .icons > form,
+header > .icons > a,
+header > .icons > div {
+  display: inline-block;
 }
 
 // Navigation Menu
@@ -43,7 +48,7 @@ header > nav.main > a:focus {
   text-decoration: underline;
   color: $btn-color;
 }
-header > .icons > a.activeIcon {
+header > .icons > i.activeIcon {
   color: $btn-color;
 }
 
@@ -106,7 +111,7 @@ header > .icons > a.activeIcon {
     position: static;
     float: right;
   }
-  header > .icons > a.hamburger {
+  header > .icons > .hamburger {
     display: none;
   }
 

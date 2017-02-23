@@ -31,14 +31,26 @@ var locations = [
 $(function() {
   // Menu
   var hamburgers = $('header > .icons > .hamburger');
-  hamburgers.removeClass('activeIcon');
+  hamburgers.children('i').removeClass('activeIcon');
   hamburgers.parents('header').children('nav.main').hide();
   // Hamburger listener
   hamburgers.click(function(e) {
     e.preventDefault();
-    $(this).toggleClass('activeIcon');
+    $(this).children('i').toggleClass('activeIcon');
     $(this).parents('header').children('nav.main').slideToggle('slow');
   });
+
+  // Search
+  var search = $('header > .icons > .search');
+  search.click(function(e) {
+    e.preventDefault();
+    $(this).addClass('activeIcon');
+    $(this).children('input').show('slow');
+  });
+  search.blur(function() {
+    $(this).removeClass('activeIcon');
+    $(this).children('input').hide('slow');
+  })
 
 
   // Old js
