@@ -1,1 +1,69 @@
 /*! Styles for drink customizations should go here */
+.panel-container{
+	padding:1rem;
+	background-color:$light-grey-bg;
+	color:$mediumdark-grey-bg;
+	border:1px solid $medium-grey-bg;
+	border-radius:5px;
+	text-align:center;
+	margin-bottom:1rem;
+	transition: background-color 0.5s ease;
+}
+
+.panel-container:hover, .panel-container:focus{
+	background-color:$btn-nav-bg-color;
+	border:1px solid $btn-color;
+	color:$btn-color;
+}
+
+
+.img-placeholder{
+	text-align:center;
+	display:block;
+	width:100px;
+	height:100px;
+	margin:auto;
+	margin-bottom:0.25rem;
+}
+
+
+.dropdown{
+	position: relative;
+  display: inline-block;
+  width:100%;
+  border-bottom:1px solid $light-grey-bg;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  /* padding-left:0.5rem; */
+  padding-right:0.5rem;
+}
+
+.dropdown-caret{
+	position:absolute;
+	right:0.5rem;
+	top:2.5rem;
+	color:#333333;
+}
+
+.dropdown-box{
+	display:none;
+	position:absolute;
+	padding:1rem;
+	padding-top:0.25rem;
+	padding-bottom:0.25rem;
+	width:100%;
+	border-radius:5px;
+	background:$light-grey-bg;
+	top:5rem;	
+}
+
+.dropdown-content{
+	padding-top:1rem;
+	padding-bottom:1rem;
+	border-bottom:1px solid $medium-grey-bg;
+}
+
+.dropdown-box .dropdown-content:last-child{
+	border-bottom:none;
+}
+

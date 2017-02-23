@@ -40,6 +40,7 @@ $(function() {
     $(this).parents('header').children('nav.main').slideToggle('slow');
   });
 
+<<<<<<< Updated upstream
   // Search
   var search = $('header > .icons > .search');
   search.click(function(e) {
@@ -51,6 +52,11 @@ $(function() {
     $(this).removeClass('activeIcon');
     $(this).children('input').hide('slow');
   })
+=======
+	$('#ice-level').click(function(){
+		$('#ice-leveldropdown').toggle();
+	});
+>>>>>>> Stashed changes
 
 
   // Old js
@@ -60,4 +66,8 @@ $(function() {
   document.getElementById('cancel').onclick=function(){
     document.getElementById('modal').style.display='none';
   };
+
 });
+
+
+
