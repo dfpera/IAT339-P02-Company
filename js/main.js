@@ -50,6 +50,12 @@ $(function() {
     $(this).children('input').hide('slow');
   })
 
+  // Dropdown
+	$('#ice-level').click(function(){
+		$('#ice-leveldropdown').toggle();
+	});
+
+
 
   // Old js
   document.getElementById('modal-open').onclick=function(){
@@ -58,4 +64,5 @@ $(function() {
   document.getElementById('cancel').onclick=function(){
     document.getElementById('modal').style.display='none';
   };
+
 });
