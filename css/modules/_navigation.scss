@@ -27,6 +27,7 @@
 // PANEL STYLINGS
 nav.panels {
   width: 100%;
+  
 }
 nav.panels::after {
   content: "";
@@ -41,6 +42,8 @@ nav.panels a {
   display: block;
   -webkit-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out;
+  height:300px;
+  background-color:rgba(0,0,0,0.2);
 }
 nav.panels a:hover,
 nav.panels a:focus {
@@ -53,24 +56,26 @@ nav.panels a > p {
   position: absolute;
   display: inline-block;
   z-index: 10;
-  bottom: 0.25rem;
+  bottom: 0rem;
   width: 100%;
   font-family: $navigation-font;
   text-align: right;
-  font-size: 2.0rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: lowercase;
-  padding: 1.75rem 0.75rem 1.0rem;
+  padding: 1rem 0.75rem 1.0rem;
   margin: 0;
-  background: $label-bg-color;
-  color: $label-color;
-  opacity: .8;
+ /*  background: $label-bg-color; */
+  background-color:rgba(0,0,0,0.6);
+  color: $font-light;
+  opacity: 1;
 }
 
 // Icons
 nav.icons {
 
 }
+
 nav.icons::after {
   content: "";
   display: block;
@@ -103,3 +108,31 @@ nav.icons a > p {
   opacity: .8;
   text-align: center;
 }
+
+.panel-img{
+  bottom: 0px;
+  display: block;
+  position: absolute;
+  vertical-align: top;
+  z-index:-1;
+  width: 100%;
+  left:0;
+  top:0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.panel-img-events{
+	background-image: url(https://i.ytimg.com/vi/HakLm9OdYhc/maxresdefault.jpg);
+}
+
+.panel-img-findus{
+	background-image: url(https://janetennet.files.wordpress.com/2013/09/img_3240.jpg);
+}
+
+.panel-img-about{
+	background-image: url(http://i.dailymail.co.uk/i/pix/2012/07/02/article-2167678-13DB36DE000005DC-972_468x709.jpg);
+}
+
