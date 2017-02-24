@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find Us - Qtea</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><a href="index.html"><span class="capitalize">Qtea</span></a></h1>
+      </div>
+      <div class="icons">
+        <a href="javascript:void(0)" id="modal-open"><i class="fa fa-shopping-cart"></i></a>
+        <div class="hamburger"><i class="fa fa-bars"></i></div>
+        <form class="search">
+          <input type="text" class="basic-form inputSearch" placeholder="Search...">
+          <i class="fa fa-search"></i>
+          <div class="results">
+            <div class="row product-list">
+              <div class="product-overlay"></div>
+              <div class="col-lg-2 col-med-2 col-sm-5">
+                  <img src="img/drinks/milk_tea.jpg" alt="Milk Tea" class="img-container">
+              </div>
+              <div class="col-lg-10 col-med-10 col-sm-7">
+                <h4>Milk Tea</h4>
+                <h6>Our signature drink, a good go to drink for those trying bubble tea for the first time.</h6>
+              </div>
+            </div>
+            <div class="row product-list">
+              <div class="product-overlay"></div>
+              <div class="col-lg-2 col-med-2 col-sm-5">
+                  <img src="img/drinks/mango_milk_tea.jpg" alt="Mango Milk Tea" class="img-container">
+              </div>
+              <div class="col-lg-10 col-med-10 col-sm-7">
+                <h4>Mango Milk Tea</h4>
+                <h6>A customer favourite, good for those who are looking for a milk base with a fruity flavour.</h6>
+              </div>
+            </div>
+            <input type="submit" class="btn-form-success" value="View more results...">
+          </div>
+        </form>
+      </div>
+      <nav class="main">
+        <a href="order-now/index.html">Order&nbsp;Now</a>
+        <span>|</span>
+        <a href="events-news/index.html">Events&nbsp;&amp;&nbsp;News</a>
+        <span>|</span>
+        <a href="find-us.html">Find&nbsp;Us</a>
+        <span>|</span>
+        <a href="about-us.html">About&nbsp;Us</a>
+      </nav>
+    </header>
+
+    <!-- Cart -->
+    <div class="pop-up-bg" id="modal">
+      <div class="cart-container">
+        <div class="cart-content">
+          <div class="row description-title">
+            <div class="col-lg-6 col-med-6 col-sm-6">
+              <h4>Shopping Cart</h4>
+            </div>
+            <div class="hide-small">
+              <div class="col-lg-2 col-med-2 col-sm-3">
+                <h5>Price</h5>
+              </div>
+              <div class="col-lg-2 col-med-2 col-sm-3">
+                <h5>Quantity</h5>
+              </div>
+              <div class="col-lg-2 col-med-2 col-sm-3">
+                <h5 class="text-right">Total</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row product-list">
+            <div class="col-lg-2 col-med-4 col-sm-4">
+              <img src="img/drinks/milk_tea.jpg" class="img-container" alt="Dog Treats">
+            </div>
+            <div class="col-lg-4 col-med-8 col-sm-8">
+              <h4>Milk Tea</h4>
+              <h6>Size: Large</h6>
+              <h6>Ice Level: 50%</h6>
+              <h6>Sweetness: 50%</h6>
+              <h6>Toppings: Tapioca Pearls</h6>
+            </div>
+            <div class="add-margin-top">
+              <div class="col-lg-2 col-med-2 col-sm-2">
+                <h5>$5.99</h5>
+              </div>
+              <div class="col-lg-2 col-med-2 col-sm-2">
+                <input type="text" class="quantity-text-field" value="1">
+              </div>
+              <div class="col-lg-2 col-med-8 col-sm-8">
+                <h5 class="text-right">$5.99</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn-checkout text-right">
+                <h6>Tax(10%) $0.59</h6>
+                <h4>Grand Total $6.50</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-checkout">
+              <div class="col-lg-6 col-md-6">
+                <button id="cancel" class="btn-form-reset">Cancel</button>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <input type="submit" class="btn-form-success" value="Proceed to Checkout">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- START MAIN CONTENT -->
+
+    <!-- END MAIN CONTENT -->
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4bAc5sa-IFkJsIUJ-jMTP50qJrGErzaA&callback=initMap"></script>
+  </body>
+</html>
