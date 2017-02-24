@@ -1,6 +1,6 @@
 .banner-container{
 	position:relative;
-	height:50vh;
+	height:75vh;
 	width:100%;
 	overflow: hidden;	
 	
@@ -11,14 +11,14 @@
 }
 
 .img-banner{
-  bottom: -22px;
+  bottom: 0px;
   display: block;
   position: absolute;
-  vertical-align: top;
+  vertical-align: bottom;
   z-index:-1;
   width: 100%;
   left:0;
-  top:0;
+  top:200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
