@@ -12,13 +12,13 @@
   <body>
     <header>
       <div class="logo">
-        <h1><span class="capitalize">Qtea</span></h1>
+        <h1><a href="index.html"><span class="capitalize">Qtea</span></a></h1>
       </div>
       <div class="icons">
         <a href="#"><i class="fa fa-shopping-cart"></i></a>
         <div class="hamburger"><i class="fa fa-bars"></i></div>
         <form class="search">
-          <input type="text" class="inputSearch">
+          <input type="text" class="basic-form inputSearch" placeholder="Search...">
           <i class="fa fa-search"></i>
           <div class="results">
             <div class="row product-list">
@@ -252,13 +252,16 @@
     <section id="base_elements">
       <section>
         <h2>Headings - Base Elements</h2>
-        <p class="TODO">Explain where each heading is to be used.</p>
         <h1>Page Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <h2>Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <h3>Sub Heading</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h4>Sub-sub Heading</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h5>Product Titles</h5>
+        <h6>Product Customizations</h6>
       </section>
       <section>
         <h2>Paragraphs - Base Elements</h2>
@@ -266,7 +269,6 @@
       </section>
       <section>
         <h2>Bulleted/Numbered Lists - Base Elements</h2>
-        <p class="TODO">Add Descriptive text here.</p>
         <ul>
           <li>Item 1</li>
           <li>Item 2</li>
@@ -280,12 +282,9 @@
       </section>
       <section>
         <h2>In-text Link - Base Elements</h2>
-        <p class="TODO">Replace Lorem Ipsum with descriptive text.</p>
         <h3>Rendered Element</h3>
         <p><a class="text-link" href="#">text link</a></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a class="text-link" href="#">Ut enim</a> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h3>CSS Selector</h3>
-        <p>.text-link</p>
+        <p>This is an example of an <a class="text-link" href="#">in-text link</a>. The link is within a paragraph to give a feeling of how it shows withing a block of text. This is an example of an <a class="text-link" href="#">in-text link</a>. The link is within a paragraph to give a feeling of how it shows withing a block of text.</p>
         <h3>Sample Code</h3>
         <code>&lt;a href="#" class="text-link"&gt;Default Button&lt;/a&gt;</code>
       </section>
@@ -307,6 +306,7 @@
       </section>
       <section>
         <h2>Picture/Description - Img/Text Components</h2>
+        <p>The picture/description is used to display products throughout the site. It is also used for the map when showing the locations of Qtea.</p>
         <h3>Rendered Element</h3>
 				<div class="row product-list">
 				  <div class="product-overlay"></div>
@@ -363,36 +363,55 @@
     <section id="navigation">
       <section>
         <h2>Button - Navigation</h2>
-        <p class="TODO">Add descriptive text of where this is used.</p>
+        <p>The main button used for navigation. Used outside of forms but to go from page to page.</p>
         <h3>Rendered Element</h3>
         <nav>
           <a class="btn-nav" href="#">Nav Button</a>
         </nav>
-        <h3>CSS Selector</h3>
-        <p>.btn-nav</p>
         <h3>Sample Code</h3>
         <code>&lt;a href="#" class="btn-nav"&gt;Default Button&lt;/a&gt;</code>
-      </section>
-      <section>
-        <h2>Back Button - Navigation</h2>
-        <p class="TODO">This is a back button that should appear only in the on the main nav bar when using the hamburger menu.</p>
       </section>
       <section>
         <h2>Main Navigation - Navigation</h2>
         <p>This is the main navigation that is applied to every page of the website. It implements the logo, main menu, and main icons for search and shopping cart.</p>
         <p class="TODO">
-          Add link back to home page.<br>
           Add active link for page actively on.
         </p>
         <h3>Rendered Element</h3>
         <header>
           <div class="logo">
-            <h1><span class="capitalize">Qtea</span></h1>
+            <h1><a href="index.html"><span class="capitalize">Qtea</span></a></h1>
           </div>
           <div class="icons">
-            <form class="search"><i class="fa fa-search"></i></form>
             <a href="#"><i class="fa fa-shopping-cart"></i></a>
             <div class="hamburger"><i class="fa fa-bars"></i></div>
+            <form class="search">
+              <input type="text" class="basic-form inputSearch" placeholder="Search...">
+              <i class="fa fa-search"></i>
+              <div class="results">
+                <div class="row product-list">
+                  <div class="product-overlay"></div>
+                  <div class="col-lg-2 col-med-2 col-sm-5">
+                      <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg" class="img-container">
+                  </div>
+                  <div class="col-lg-4 col-med-10 col-sm-7">
+                    <h4>Bubble Tea</h4>
+                    <h6>ext ever since the 1500s, when an unknown printer took a galley of type</h6>
+                  </div>
+                </div>
+                <div class="row product-list">
+                  <div class="product-overlay"></div>
+                  <div class="col-lg-2 col-med-2 col-sm-5">
+                      <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg" class="img-container">
+                  </div>
+                  <div class="col-lg-4 col-med-10 col-sm-7">
+                    <h4>Product title</h4>
+                    <h6>ext ever since the 1500s, when an unknown printer took a galley of type</h6>
+                  </div>
+                </div>
+                <input type="submit" class="btn-form-success" value="View more results...">
+              </div>
+            </form>
           </div>
           <nav class="main">
             <a href="#">Order&nbsp;Now</a>
@@ -405,32 +424,57 @@
           </nav>
         </header>
         <h3 class="clearfix">Sample Code</h3>
-<pre><code>&lt;header&gt;
-  &lt;div class=&quot;logo&quot;&gt;
-    &lt;h1&gt;&lt;span class=&quot;capitalize&quot;&gt;Qtea&lt;/span&gt;&lt;/h1&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;icons&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class=&quot;hamburger&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;nav class=&quot;main&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Order&amp;nbsp;Now&lt;/a&gt;
-    &lt;span&gt;|&lt;/span&gt;
-    &lt;a href=&quot;#&quot;&gt;Events&amp;nbsp;&amp;amp;&amp;nbsp;News&lt;/a&gt;
-    &lt;span&gt;|&lt;/span&gt;
-    &lt;a href=&quot;#&quot;&gt;Find&amp;nbsp;Us&lt;/a&gt;
-    &lt;span&gt;|&lt;/span&gt;
-    &lt;a href=&quot;#&quot;&gt;About&amp;nbsp;Us&lt;/a&gt;
-  &lt;/nav&gt;
-&lt;/header&gt;</code></pre>
+        <code>
+          &lt;header&gt;<br />
+           &nbsp;&lt;div class=&quot;logo&quot;&gt;<br />
+           &nbsp; &nbsp;&lt;h1&gt;&lt;a href=&quot;index.html&quot;&gt;&lt;span class=&quot;capitalize&quot;&gt;Qtea&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;<br />
+           &nbsp;&lt;/div&gt;<br />
+           &nbsp;&lt;div class=&quot;icons&quot;&gt;<br />
+           &nbsp; &nbsp;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br />
+           &nbsp; &nbsp;&lt;div class=&quot;hamburger&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/div&gt;<br />
+           &nbsp; &nbsp;&lt;form class=&quot;search&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp;&lt;input type=&quot;text&quot; class=&quot;inputSearch&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;<br />
+           &nbsp; &nbsp; &nbsp;&lt;div class=&quot;results&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;row product-list&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Bubble Tea&lt;/h4&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;row product-list&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Product title&lt;/h4&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+           &nbsp; &nbsp; &nbsp; &nbsp;&lt;input type=&quot;submit&quot; class=&quot;btn-form-success&quot; value=&quot;View more results...&quot;&gt;<br />
+           &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+           &nbsp; &nbsp;&lt;/form&gt;<br />
+           &nbsp;&lt;/div&gt;<br />
+           &nbsp;&lt;nav class=&quot;main&quot;&gt;<br />
+           &nbsp; &nbsp;&lt;a href=&quot;#&quot;&gt;Order&amp;nbsp;Now&lt;/a&gt;<br />
+           &nbsp; &nbsp;&lt;span&gt;|&lt;/span&gt;<br />
+           &nbsp; &nbsp;&lt;a href=&quot;#&quot;&gt;Events&amp;nbsp;&amp;amp;&amp;nbsp;News&lt;/a&gt;<br />
+           &nbsp; &nbsp;&lt;span&gt;|&lt;/span&gt;<br />
+           &nbsp; &nbsp;&lt;a href=&quot;#&quot;&gt;Find&amp;nbsp;Us&lt;/a&gt;<br />
+           &nbsp; &nbsp;&lt;span&gt;|&lt;/span&gt;<br />
+           &nbsp; &nbsp;&lt;a href=&quot;#&quot;&gt;About&amp;nbsp;Us&lt;/a&gt;<br />
+           &nbsp;&lt;/nav&gt;<br />
+          &lt;/header&gt;
+        </code>
       </section>
       <section>
         <h2>Breadcrumbs - Navigation</h2>
-        <p>The breadcrumbs will display as a drop down on small screens.</p>
-        <p class="TODO">
-          Add small screen version of breadcrumbs.
-        </p>
+        <p>The breadcrumbs will display where the user's current location is on the website.</p>
         <h3>Rendered Element</h3>
         <nav class="breadcrumbs">
           <a href="#">Home</a>
@@ -535,7 +579,7 @@
       </section>
       <section>
         <h2>Submit/Reset Buttons - Forms</h2>
-        <p class="TODO">Explain what this is used for.</p>
+        <p>Success and reset/cancel buttons used within forms.</p>
         <h3>Rendered Element</h3>
         <form action="#">
           <input type="submit" class="btn-form-success" value="submit">
@@ -553,17 +597,77 @@
       </section>
       <section>
         <h2>Search - Forms</h2>
-        <p class="TODO">I think this should be a modal and the listings should use picture/description component.</p>
+        <p>The search bar that is inside of the main navigation used to search for products.</p>
         <h3>Rendered Element</h3>
         <header>
           <div class="icons">
-            <form class="search"><i class="fa fa-search"></i></form>
+            <form class="search">
+              <input type="text" class="basic-form inputSearch" placeholder="Search...">
+              <i class="fa fa-search"></i>
+              <div class="results">
+                <div class="row product-list">
+                  <div class="product-overlay"></div>
+                  <div class="col-lg-2 col-med-2 col-sm-5">
+                      <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg" class="img-container">
+                  </div>
+                  <div class="col-lg-4 col-med-10 col-sm-7">
+                    <h4>Bubble Tea</h4>
+                    <h6>ext ever since the 1500s, when an unknown printer took a galley of type</h6>
+                  </div>
+                </div>
+                <div class="row product-list">
+                  <div class="product-overlay"></div>
+                  <div class="col-lg-2 col-med-2 col-sm-5">
+                      <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg" class="img-container">
+                  </div>
+                  <div class="col-lg-4 col-med-10 col-sm-7">
+                    <h4>Product title</h4>
+                    <h6>ext ever since the 1500s, when an unknown printer took a galley of type</h6>
+                  </div>
+                </div>
+                <input type="submit" class="btn-form-success" value="View more results...">
+              </div>
+            </form>
           </div>
         </header>
         <h3 class="clearfix">Sample Code</h3>
+        <code>
+          &lt;header&gt;<br />
+          &nbsp;&lt;div class=&quot;icons&quot;&gt;<br />
+          &nbsp; &nbsp;&lt;form class=&quot;search&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;input type=&quot;text&quot; class=&quot;basic-form inputSearch&quot; placeholder=&quot;Search...&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;div class=&quot;results&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;row product-list&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Bubble Tea&lt;/h4&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;row product-list&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Product title&lt;/h4&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;input type=&quot;submit&quot; class=&quot;btn-form-success&quot; value=&quot;View more results...&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp;&lt;/form&gt;<br />
+          &nbsp;&lt;/div&gt;<br />
+          &lt;/header&gt;
+        </code>
       </section>
       <section>
         <h2>Login - Forms</h2>
+        <p>Used to log into the website and usually used on its own page.</p>
         <h3>Rendered Element</h3>
 				<div class="row">
 					<div class="login-form-container">
@@ -611,6 +715,7 @@
       </section>
       <section>
         <h2>Cart - Forms</h2>
+        <p>Modal for the cart accessible from the main navigation icon.</p>
         <h3>Rendered Element</h3>
         <a href="javascript:void(0);" id="modal-open" class="btn-form-success">open cart</a>
 				<div class="pop-up-bg" id="modal">
@@ -753,7 +858,7 @@
     <section id="other">
       <section>
         <h2>Contact Map - Other</h2>
-        <p class="TODO">Style nicely and add sample code.</p>
+        <p>Used for finding the locations of Qtea.</p>
         <h3>Rendered Element</h3>
         <div class="findusMap">
           <div class="col-med-6 col-lg-6">
@@ -783,7 +888,35 @@
           </div>
         </div>
         <h3 class="clearfix">Sample Code</h3>
-
+        <code>
+          &lt;div class=&quot;findusMap&quot;&gt;<br />
+          &nbsp;&lt;div class=&quot;col-med-6 col-lg-6&quot;&gt;<br />
+          &nbsp; &nbsp;&lt;div id=&quot;map&quot;&gt;&lt;/div&gt;<br />
+          &nbsp;&lt;/div&gt;<br />
+          &nbsp;&lt;div class=&quot;col-med-6 col-lg-6&quot;&gt;<br />
+          &nbsp; &nbsp;&lt;div class=&quot;row product-list&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Bubble Tea&lt;/h4&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp;&lt;div class=&quot;row product-list&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;div class=&quot;product-overlay&quot;&gt;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-2 col-med-2 col-sm-5&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;http://s.cdpn.io/3/dingo-dog-bones.jpg&quot; class=&quot;img-container&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;div class=&quot;col-lg-4 col-med-10 col-sm-7&quot;&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;h4&gt;Product title&lt;/h4&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;&lt;h6&gt;ext ever since the 1500s, when an unknown printer took a galley of type&lt;/h6&gt;<br />
+          &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp; &nbsp;&lt;/div&gt;<br />
+          &nbsp;&lt;/div&gt;<br />
+          &lt;/div&gt;
+        </code>
       </section>
     </section>
 
