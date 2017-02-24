@@ -7,7 +7,7 @@ function initMap() {
     center: {lat: 49.2589637, lng: -123.0648282}
   });
   // Create an array of alphabetical characters used to label the markers.
-  var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var labels = 'abcdefghijklmnopqrstuvwxyz';
 
   // Add some markers to the map.
   // Note: The code uses the JavaScript Array.prototype.map() method to
