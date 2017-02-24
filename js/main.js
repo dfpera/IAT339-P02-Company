@@ -43,12 +43,17 @@ $(function() {
   var search = $('header > .icons > .search');
   search.click(function() {
     $(this).children('i').addClass('activeIcon');
-    $(this).children('input').show('slow');
+    $(this).children('.inputSearch').show(500);
+    $(this).children('.inputSearch').focus();
   });
   search.focusout(function() {
     $(this).children('i').removeClass('activeIcon');
-    $(this).children('input').hide('slow');
-  })
+    $(this).children('.results').slideUp(500);
+    $(this).children('.inputSearch').delay(500).hide('slow');
+  });
+  search.focusin(function() {
+    $(this).children('.results').delay(500).slideDown('slow');
+  });
 
   // Dropdown
 	$('#ice-level').click(function(){

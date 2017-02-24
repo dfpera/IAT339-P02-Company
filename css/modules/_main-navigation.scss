@@ -1,6 +1,5 @@
 /*! Header and main navigation should go here */
 // TODO: Implement an active class for the menu
-// TODO: Fix heading center when getting really small screen sizes
 header {
   position: relative;
   padding: 0 0.75rem;
@@ -26,6 +25,8 @@ header > .icons > form,
 header > .icons > a,
 header > .icons > div {
   display: inline-block;
+  float: right;
+  padding-left: 0.5rem;
 }
 
 // Navigation Menu
@@ -36,6 +37,7 @@ header > nav.main {
   line-height: 1.7rem;
   text-transform: lowercase;
   color: $nav-color;
+  z-index: 500;
 }
 header > nav.main > a {
   text-decoration: none;

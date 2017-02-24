@@ -1,4 +1,49 @@
 /*! Styles for the search box and results should go here */
-.search input {
+.search {
+  height: 3.0rem;
+}
+.search > input.inputSearch {
   display: none;
+  border: 3px solid $nav-color;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+.search i {
+  padding-left: 0.75rem;
+}
+.search > .results {
+  position: relative;
+  margin-top: 1.0rem;
+  padding-bottom: 0.25rem;
+  display: none;
+  clear: both;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.search > .results .btn-form-success {
+  display: block;
+  width: auto;
+  font-size: 0.8rem;
+  margin: 0.75rem auto;
+}
+
+@media #{$small-break} {
+  .search > input.inputSearch {
+    width: 80%;
+  }
+}
+
+@media #{$medium-break} {
+  .search {
+    clear: none;
+  }
+  .search input {
+    width: 17rem;
+  }
+  .search > .results {
+    max-width: 22rem;
+  }
 }
