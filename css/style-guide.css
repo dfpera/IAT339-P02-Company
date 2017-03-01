@@ -12,6 +12,10 @@ section code {
   display: inline-block;
 }
 
+section p > code {
+  margin: 0;
+}
+
 img.placeholder {
   width: 100%;
 }

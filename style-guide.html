@@ -710,17 +710,17 @@
       </section>
       <section>
         <h2>Customize Drink - Forms</h2>
-        <p class="TODO">Refer to the user flow mockups.</p>
+        <p>This element is used for customizing the attributes of the drinks. It comes in the form of two components, the small screen drop down and the medium/large screen icons. In order to use them the icons must be named ICONNAME-active.png and ICONNAME.png. The components must be have an id of SECTION-NAME-big and SECTION-NAME for big and small respectively. A line needs to be added to the main.js, <code>initCustomize("#SECTION-NAME");</code> in order to work. The JS will do the rest. <br><strong>NOTE: </strong>Remember to set a default active icon.</p>
         <h3>Rendered Element</h3>
         <!-- Medium and Large Screen -->
-        <div id="ice-level-big" class="row">
+        <div id="ice-level-big" class="row hide-sm">
         	<div class="col-lg-12">
         		<h4 class="padder-bottom">Ice Level</h4>
         	</div>
         	<div class="col-lg-2 col-med-4 col-sm-12">
-        		<div class="panel-container">
+        		<div class="panel-container active">
         			<div class="icon-container">
-        				<img src="img/icons/none.png" class="img-placeholder">
+        				<img alt="No Ice" src="img/icons/none-active.png" class="img-placeholder">
         			</div>
         			<h5>None</h5>
         		</div>
@@ -728,7 +728,7 @@
         	<div class="col-lg-2 col-med-4 col-sm-12">
         		<div class="panel-container">
         			<div class="icon-container">
-        				<img src="img/icons/ice25.png" class="img-placeholder">
+        				<img alt="25% Ice" src="img/icons/ice25.png" class="img-placeholder">
         			</div>
         			<h5>25%</h5>
         		</div>
@@ -736,7 +736,7 @@
         	<div class="col-lg-2 col-med-4 col-sm-12">
         		<div class="panel-container">
         			<div class="icon-container">
-        				<img src="img/icons/ice50.png" class="img-placeholder">
+        				<img alt="50% Ice" src="img/icons/ice50.png" class="img-placeholder">
         			</div>
         			<h5>50%</h5>
         		</div>
@@ -744,7 +744,7 @@
         	<div class="col-lg-2 col-med-4 col-sm-12">
         		<div class="panel-container">
         			<div class="icon-container">
-        				<img src="img/icons/ice75.png" class="img-placeholder">
+        				<img alt="75% Ice" src="img/icons/ice75.png" class="img-placeholder">
         			</div>
         			<h5>75%</h5>
         		</div>
@@ -752,14 +752,14 @@
         	<div class="col-lg-2 col-med-4 col-sm-12">
         		<div class="panel-container">
         			<div class="icon-container">
-        				<img src="img/icons/ice100.png" class="img-placeholder">
+        				<img alt="100% Ice" src="img/icons/ice100.png" class="img-placeholder">
         			</div>
         			<h5>100%</h5>
         		</div>
         	</div>
         </div>
         <!-- Small Screen -->
-        <div class="row">
+        <div class="row hide-med">
         	<div class="col-lg-12">
         		<div id="ice-level" class="dropdown">
         			<h6>Ice Level</h6>
@@ -776,7 +776,69 @@
         	</div>
         </div>
         <h3>Sample Code</h3>
-
+        <code>&lt;!-- Medium and Large Screen --&gt;<br />
+        &lt;div id=&quot;ice-level-big&quot; class=&quot;row hide-sm&quot;&gt;<br />
+         &nbsp;&lt;div class=&quot;col-lg-12&quot;&gt;<br />
+         &nbsp; &nbsp;&lt;h4 class=&quot;padder-bottom&quot;&gt;Ice Level&lt;/h4&gt;<br />
+         &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;div class=&quot;col-lg-2 col-med-4 col-sm-12&quot;&gt;<br />
+         &nbsp; &nbsp;&lt;div class=&quot;panel-container active&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;div class=&quot;icon-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;img alt="No Ice"  src=&quot;img/icons/none-active.png&quot; class=&quot;img-placeholder&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h5&gt;None&lt;/h5&gt;<br />
+         &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;div class=&quot;col-lg-2 col-med-4 col-sm-12&quot;&gt;<br />
+         &nbsp; &nbsp;&lt;div class=&quot;panel-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;div class=&quot;icon-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;img alt="25% Ice"  src=&quot;img/icons/ice25.png&quot; class=&quot;img-placeholder&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h5&gt;25%&lt;/h5&gt;<br />
+         &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;div class=&quot;col-lg-2 col-med-4 col-sm-12&quot;&gt;<br />
+         &nbsp; &nbsp;&lt;div class=&quot;panel-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;div class=&quot;icon-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;img alt="50% Ice"  src=&quot;img/icons/ice50.png&quot; class=&quot;img-placeholder&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h5&gt;50%&lt;/h5&gt;<br />
+         &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;div class=&quot;col-lg-2 col-med-4 col-sm-12&quot;&gt;<br />
+         &nbsp; &nbsp;&lt;div class=&quot;panel-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;div class=&quot;icon-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;img alt="75% Ice"  src=&quot;img/icons/ice75.png&quot; class=&quot;img-placeholder&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h5&gt;75%&lt;/h5&gt;<br />
+         &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;div class=&quot;col-lg-2 col-med-4 col-sm-12&quot;&gt;<br />
+         &nbsp; &nbsp;&lt;div class=&quot;panel-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;div class=&quot;icon-container&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;img alt="100% Ice"  src=&quot;img/icons/ice100.png&quot; class=&quot;img-placeholder&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h5&gt;100%&lt;/h5&gt;<br />
+         &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;!-- Small Screen --&gt;<br />
+        &lt;div class=&quot;row hide-med&quot;&gt;<br />
+         &nbsp;&lt;div class=&quot;col-lg-12&quot;&gt;<br />
+         &nbsp; &nbsp;&lt;div id=&quot;ice-level&quot; class=&quot;dropdown&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h6&gt;Ice Level&lt;/h6&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h5 class=&quot;capitalize&quot;&gt;None&lt;/h5&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;h5 class=&quot;dropdown-caret fa fa-caret-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/h5&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;div class=&quot;dropdown-box&quot;&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;dropdown-content&quot;&gt;None&lt;/p&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;dropdown-content&quot;&gt;25%&lt;/p&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;dropdown-content&quot;&gt;50%&lt;/p&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;dropdown-content&quot;&gt;75%&lt;/p&gt;<br />
+         &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;dropdown-content&quot;&gt;100%&lt;/p&gt;<br />
+         &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp; &nbsp;&lt;/div&gt;<br />
+         &nbsp;&lt;/div&gt;<br />
+        &lt;/div&gt;</code>
       </section>
       <section>
         <h2>Cart - Forms</h2>
