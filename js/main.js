@@ -27,6 +27,64 @@ var locations = [
   {lat: 49.272966, lng: -123.002818}
 ];
 
+function initCustomize(menuID) {
+  // Customize (medium/large)
+  $(menuID + '-big .panel-container').click(function() {
+    var currentImg = $(this).find('.icon-container img');
+    var currentSrc = currentImg.attr('src').split('.')[0];
+    if (currentSrc.indexOf('-active') == -1) {
+      // Reset active panel
+      var allPanels = $(menuID + '-big .panel-container');
+      allPanels.removeClass('active');
+      allPanels.each(function() {
+        var img = $(this).find('.icon-container img');
+        var src = img.attr('src');
+        img.attr('src', src.replace('-active', ''));
+      });
+      // Set large toggle active
+      currentImg.attr(
+        'src',
+        currentSrc + '-active.png'
+      );
+      $(this).toggleClass('active');
+      // Set small drop down text
+      var content = $(this).children('h5').text();
+      $(menuID + '.dropdown > h5.capitalize').text(content);
+    }
+  });
+
+  // Customize (small)
+  $(menuID).click(function(){
+    $(this).find('.dropdown-box').slideToggle();
+    $(this).find('.dropdown-caret').toggleClass('fa-caret-down');
+    $(this).find('.dropdown-caret').toggleClass('fa-caret-up');
+  });
+  // Menu Options
+  $(menuID + ' .dropdown-box > .dropdown-content').click(function() {
+    var content = $(this).text();
+    // Set small drop down text
+    $(this).parents('.dropdown').children('h5.capitalize').text(content);
+    // Set large toggle active
+    var bigMenuOptions = $(menuID + '-big .panel-container');
+    bigMenuOptions.each(function() {
+      // Reset active panel
+      var img = $(this).find('.icon-container img');
+      var src = img.attr('src');
+      img.attr('src', src.replace('-active', ''));
+      $(this).removeClass('active');
+      if ($(this).children('h5').text() === content) {
+        var currentImg = $(this).find('.icon-container img');
+        var currentSrc = currentImg.attr('src').split('.')[0];
+        currentImg.attr(
+          'src',
+          currentSrc + '-active.png'
+        );
+        $(this).toggleClass('active');
+      }
+    });
+  });
+}
+
 // Main Loop
 $(function() {
   // Menu
@@ -55,19 +113,17 @@ $(function() {
     $(this).children('.results').delay(500).slideDown('slow');
   });
 
-  // Dropdown
-	$('#ice-level').click(function(){
-		$('#ice-leveldropdown').toggle();
-	});
+  // Customize form
+  initCustomize('#size');
+  initCustomize('#toppings');
+  initCustomize('#ice-level');
+  initCustomize('#sugar-level');
 
-
-
-  // Old js
-  document.getElementById('modal-open').onclick=function(){
-    document.getElementById('modal').style.display='block';
-  };
-  document.getElementById('cancel').onclick=function(){
-    document.getElementById('modal').style.display='none';
-  };
-
+  // Cart Modal
+  $('modal-open').click(function(){
+    $('modal').show();
+  });
+  $('cancel').click(function(){
+    $('modal').hide();
+  });
 });

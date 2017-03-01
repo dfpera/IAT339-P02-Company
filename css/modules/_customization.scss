@@ -1,5 +1,6 @@
 /*! Styles for drink customizations should go here */
 .panel-container{
+	cursor: pointer;
 	padding:1rem;
 	background-color:transparent;
 	color:$mediumdark-grey-bg;
@@ -11,10 +12,12 @@
 	transition: background-color 0.5s ease;
 }
 
-.panel-container:hover, .panel-container:focus{
-	background-color:$light-grey-bg;
+.panel-container.active,
+.panel-container:hover,
+.panel-container:focus {
+	background-color:$light-grey-bg !important;
 	/* border:1px solid $medium-grey-bg; */
-	color:$h1-color;
+	color:$h1-color !important;
 }
 
 
@@ -30,6 +33,7 @@
 
 .dropdown{
 	position: relative;
+	cursor: pointer;
   display: inline-block;
   width:100%;
   border-bottom:1px solid $light-grey-bg;
@@ -55,7 +59,7 @@
 	width:100%;
 	border-radius:5px;
 	background:$light-grey-bg;
-	top:5rem;	
+	top:5rem;
 }
 
 .dropdown-content{
@@ -63,9 +67,14 @@
 	padding-left:1rem;
 	padding-bottom:1rem;
 	border-bottom:1px solid $medium-grey-bg;
+	transition: background-color 0.5s ease;
+}
+
+.dropdown-content:hover,
+.dropdown-content:focus {
+	background-color: $medium-grey-bg;
 }
 
 .dropdown-box .dropdown-content:last-child{
 	border-bottom:none;
 }
-
