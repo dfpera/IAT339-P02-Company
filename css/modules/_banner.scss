@@ -1,27 +1,27 @@
 .banner-container{
 	position:relative;
-	height:75vh;
+	height:70vh;
 	width:100%;
 	overflow: hidden;	
 	
 }
 
 .text-vertical{
-	margin-top:12.5%;
+	margin-top:30%;
 }
 
 .img-banner{
-  bottom: 0px;
   display: block;
   position: absolute;
-  vertical-align: bottom;
+  /* vertical-align: top; */
   z-index:-1;
   width: 100%;
-  left:0;
-  top:200px;
+  bottom: -175px;
+  /* left:0; */
+  top:0px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../img/bubble-tea_Banner.jpg);
-
+  background-position: left;
+  background-image: url(../img/bubble_tea_Banner.jpg);
+	background-color:rgba(0,0,0,0.5);
 }

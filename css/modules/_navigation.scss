@@ -42,9 +42,21 @@ nav.panels a {
   display: block;
   -webkit-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out;
-  height:300px;
-  background-color:rgba(0,0,0,0.2);
+  height:250px;
+/*
+  border-radius:5px;
+  overflow:hidden;
+*/
+  background:rgba(0,0,0,0.1);
+ /*  background-color:rgba(0,0,0,0.2); */
+ /* used http://www.colorzilla.com/gradient-editor/ to generate gradient*/
+/* background: rgba(254,187,187,0.3); */ /* Old browsers */
+/* background: -moz-linear-gradient(-45deg, rgba(254,187,187,0.3) 0%, rgba(254,144,144,0.3) 45%, rgba(255,92,92,0.3) 100%); */ /* FF3.6-15 */
+/* background: -webkit-linear-gradient(-45deg, rgba(254,187,187,0.5) 0%,rgba(254,144,144,0.5) 45%,rgba(255,92,92,0.3) 100%); */ /* Chrome10-25,Safari5.1-6 */
+/* background: linear-gradient(135deg, rgba(254,187,187,0.3) 0%,rgba(254,144,144,0.3) 45%,rgba(255,92,92,0.3) 100%); */ /* W3C, IE10+, FF16+, Chrome26+, 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 nav.panels a:hover,
 nav.panels a:focus {
   opacity: 0.8;
@@ -66,7 +78,7 @@ nav.panels a > p {
   padding: 1rem 0.75rem 1.0rem;
   margin: 0;
  /*  background: $label-bg-color; */
-  background-color:rgba(0,0,0,0.6);
+  /* background-color:rgba(0,0,0,0.6); */
   color: $font-light;
   opacity: 1;
 }
@@ -125,7 +137,7 @@ nav.icons a > p {
 }
 
 .panel-img-events{
-	background-image: url(../img/panel/events.jpg);
+	background-image: url(../img/panel/eventnews.jpg);
 }
 
 .panel-img-findus{
@@ -133,6 +145,6 @@ nav.icons a > p {
 }
 
 .panel-img-about{
-	background-image: url(http://i.dailymail.co.uk/i/pix/2012/07/02/article-2167678-13DB36DE000005DC-972_468x709.jpg);
+	background-image: url(../img/panel/about.jpg);
 }
 
