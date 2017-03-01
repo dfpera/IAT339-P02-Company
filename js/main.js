@@ -100,14 +100,14 @@ $(function() {
   // Search
   var search = $('header > .icons > .search');
   search.click(function() {
-    $(this).children('i').addClass('activeIcon');
+    $(this).children('i').hide();
     $(this).children('.inputSearch').show(500);
     $(this).children('.inputSearch').focus();
   });
   search.focusout(function() {
-    $(this).children('i').removeClass('activeIcon');
     $(this).children('.results').slideUp(500);
     $(this).children('.inputSearch').delay(500).hide('slow');
+    $(this).children('i').delay(900).show('fast');
   });
   search.focusin(function() {
     $(this).children('.results').delay(500).slideDown('slow');
