@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product - Qtea</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><a href="index.html"><span class="capitalize">Qtea</span></a></h1>
+      </div>
+      <div class="icons">
+        <a href="javascript:void(0)" id="modal-open"><i class="fa fa-shopping-cart"></i></a>
+        <div class="hamburger"><i class="fa fa-bars"></i></div>
+        <form class="search">
+          <input type="text" class="basic-form inputSearch" placeholder="Search...">
+          <i class="fa fa-search"></i>
+          <div class="results">
+            <div class="row product-list">
+              <div class="product-overlay"></div>
+              <div class="col-lg-2 col-med-2 col-sm-5">
+                  <img src="img/drinks/milk_tea.jpg" alt="Milk Tea" class="img-container">
+              </div>
+              <div class="col-lg-10 col-med-10 col-sm-7">
+                <h4>Milk Tea</h4>
+                <h6>Our signature drink, a good go to drink for those trying bubble tea for the first time.</h6>
+              </div>
+            </div>
+            <div class="row product-list">
+              <div class="product-overlay"></div>
+              <div class="col-lg-2 col-med-2 col-sm-5">
+                  <img src="img/drinks/mango_milk_tea.jpg" alt="Mango Milk Tea" class="img-container">
+              </div>
+              <div class="col-lg-10 col-med-10 col-sm-7">
+                <h4>Mango Milk Tea</h4>
+                <h6>A customer favourite, good for those who are looking for a milk base with a fruity flavour.</h6>
+              </div>
+            </div>
+            <input type="submit" class="btn-form-success" value="View more results...">
+          </div>
+        </form>
+      </div>
+      <nav class="main">
+        <a href="order-now/index.html">Order&nbsp;Now</a>
+        <span>|</span>
+        <a href="events-news/index.html">Events&nbsp;&amp;&nbsp;News</a>
+        <span>|</span>
+        <a href="find-us.html">Find&nbsp;Us</a>
+        <span>|</span>
+        <a href="about-us.html">About&nbsp;Us</a>
+      </nav>
+			<nav class="breadcrumbs clearfix">
+      	<a href="index.html">Home</a>
+				<span>&gt;</span>
+				<a href="about-us.html">Product List</a>
+				<span>&gt;</span>
+				<a href="about-us.html">Regular Milk Tea</a>
+			</nav>
+    </header>
+
+<!-- <<<<<<< Updated upstream -->
+    <!-- Cart -->
+    <div class="pop-up-bg" id="modal">
+      <div class="cart-container">
+        <div class="cart-content">
+          <div class="row description-title">
+            <div class="col-lg-6 col-med-6 col-sm-6">
+              <h4>Shopping Cart</h4>
+            </div>
+            <div class="hide-small">
+              <div class="col-lg-2 col-med-2 col-sm-3">
+                <h5>Price</h5>
+              </div>
+              <div class="col-lg-2 col-med-2 col-sm-3">
+                <h5>Quantity</h5>
+              </div>
+              <div class="col-lg-2 col-med-2 col-sm-3">
+                <h5 class="text-right">Total</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row product-list">
+            <div class="col-lg-2 col-med-4 col-sm-4">
+              <img src="img/drinks/milk_tea.jpg" class="img-container" alt="Dog Treats">
+            </div>
+            <div class="col-lg-4 col-med-8 col-sm-8">
+              <h4>Milk Tea</h4>
+              <h6>Size: Large</h6>
+              <h6>Ice Level: 50%</h6>
+              <h6>Sweetness: 50%</h6>
+              <h6>Toppings: Tapioca Pearls</h6>
+            </div>
+            <div class="add-margin-top">
+              <div class="col-lg-2 col-med-2 col-sm-2">
+                <h5>$5.99</h5>
+              </div>
+              <div class="col-lg-2 col-med-2 col-sm-2">
+                <input type="text" class="quantity-text-field" value="1">
+              </div>
+              <div class="col-lg-2 col-med-8 col-sm-8">
+                <h5 class="text-right">$5.99</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn-checkout text-right">
+                <h6>Tax(10%) $0.59</h6>
+                <h4>Grand Total $6.50</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-checkout">
+              <div class="col-lg-6 col-md-6">
+                <button id="cancel" class="btn-form-reset">Cancel</button>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <input type="submit" class="btn-form-success" value="Proceed to Checkout">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START MAIN CONTENT -->
+
+    <!-- END MAIN CONTENT -->
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+<!-- ======= -->
+    
+		<div class="row">
+			<div class="col-lg-6">
+				<img src="http://honestlyyum.com/wp-content/uploads/2015/10/pumpkin.spice_.bubble.milk_.tea_.with_.boba_.2.1.jpg" class="img-stretch">
+			</div>
+			<div class="col-lg-6">
+				<h2 class="capitalize">Regular Milk Tea</h2>
+				<h4 class="capitalize">Drink Description</h4>
+				<p>Our milk teas are fragrant and filled with the freshest ingredient for the best taste possible. This milk tea is not only delicious, but also soothing! It's a choice drink for a cold day or just for sitting around. </p>
+				<h5>
+		    	<span class="review-active">
+			    	<span class="fa fa-star"aria-hidden="true"></span>
+			    	<span class="fa fa-star"aria-hidden="true"></span>
+			    	<span class="fa fa-star"aria-hidden="true"></span>
+			    	<span class="fa fa-star"aria-hidden="true"></span>
+		    	</span>
+		    	<span class="fa fa-star review"aria-hidden="true"></span>
+		    	<span class="capitalize"><a href="#" class="text-link">Drink review (10)</a></span>
+		    </h5>
+		    <input type="submit" id="customize" class="btn-form-success" value="Order Now" >
+			</div>
+		</div>
+		
+		 <div class="pop-up-bg" id="modal" style="display:inline">
+      <div class="cart-container">
+        <div class="cart-content">
+					<div class="row">
+			    	<h3>
+			    		<span class="capitalize">Milk Tea Reviews</span>
+			    		<span class="review-active">
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	</span>
+				    	<span class="fa fa-star review"aria-hidden="true"></span>
+			    	</h3>
+			    	<div class="new-review-container">
+				    	<div class="new-review">
+					    	<h4>
+					    		<span class="capitalize">Jay Jay Chu</span>
+						    	<span class="review-active">
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+						    	</span>
+						    	<span class="fa fa-star review"aria-hidden="true"></span>
+					    	</h4>
+					    	<p>This is the best bubble tea in the world wooohh survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+				    	</div>
+				    	<div class="triangle-topleft"></div>
+			    	</div>
+			    	
+			    	<div class="new-review-container">
+				    	<div class="new-review">
+					    	<h4>
+					    		<span class="capitalize">PK Subban</span>
+						    	<span class="review-active">
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+							    	<span class="fa fa-star"aria-hidden="true"></span>
+						    	</span>
+						    	<span class="fa fa-star review"aria-hidden="true"></span>
+					    	</h4>
+					    	<p>This is the best bubble tea in the world wooohh survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+				    	</div>
+				    	<div class="triangle-topleft"></div>
+			    	</div>
+			    	
+			    	
+			    	
+			    	<input type="submit" class="btn-form-success" value="+ view more reviews">
+			    	
+			    	<div class="review-form">
+			    		<h4 class="capitalize">Leave a Review</h4>
+				    	<textarea rows="10" class="basic-form" placeholder="Write your own review"></textarea>
+				    	<div class="fl-left">
+				    		<h3>
+					    		<div class="review-post">
+					    			<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+					    			<span class="fa fa-star" aria-hidden="true"></span>
+					    			<span class="fa fa-star" aria-hidden="true"></span>
+					    			<span class="fa fa-star" aria-hidden="true"></span>
+					    		</div>
+				    		</h3>
+				    	</div>
+				    	<div class="post-btn-container fl-right">
+					    		<a href="#" class="btn-form-success"><span class="fa fa-paper-plane" aria-hidden="true"></span>Post</a>
+				    	</div>
+			    	</div>
+			    </div>
+        </div>
+      </div>
+    </div>
+
+    
+<!--
+    <div class="pop-up-bg" id="modal" style="display:inline">
+      <div class="cart-container">
+        <div class="cart-content">
+        	<div class="row">
+        		<h3>Customize Drink</h3>
+        	</div>
+        </div>
+      </div>
+    </div>
+-->
+
+    
+    <!-- FOOTER -->
+    <footer>
+    	<a class="text-link" href="#">Citation</a>
+    	<span>|</span>
+    	<a class="text-link" href="#">Style Guide</a>
+    	<p class="fl-right copyright-text">&copy;2017 Qtea Bubble Tea Shop</p>
+    </footer>
+<!-- >>>>>>> Stashed changes -->
+  </body>
+</html>
