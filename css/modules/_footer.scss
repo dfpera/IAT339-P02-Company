@@ -1,5 +1,11 @@
 /*! Footer styles go here */
 footer {
+	position: absolute;
+	height: 7rem;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin-bottom: 0;
 	background:$light-grey-bg;
 	padding:1rem;
 	padding-top:1.5rem;

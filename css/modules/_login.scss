@@ -5,6 +5,11 @@
 	margin-top:6rem;
 	width:auto;
 }
+.login-form-content::after {
+	content: "";
+  display: block;
+  clear: both;
+}
 
 @media #{$small-break}{
 	.login-form-container{
@@ -12,6 +17,8 @@
 		height:100%;
 		margin-top:1rem;
 		height:100%;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
 	}
 	.login-form-content{
 		padding:0.5rem;
@@ -24,7 +31,7 @@
 		width:80%;
 		height:100%;
 		margin-top:2rem;
-		
+
 	}
 	.login-form-content{
 		padding:0.8rem;
@@ -54,4 +61,3 @@
 	-webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.2);
   box-shadow: 0 3px 9px rgba(0,0,0,0.2);
 }
-
