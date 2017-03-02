@@ -3,25 +3,6 @@ body {
   background-color: $body-bg-color;
 }
 
-
-@media #{$small-break}{
-	body{
-	  padding: 0 0.5rem;
-	}
-}
-
-@media #{$medium-break}{
-	body{
-	  padding: 0 1.5rem;
-	}
-}
-
-@media #{$large-break}{
-	body{
-	  padding: 0 2.0rem;
-	}
-}
-
 h1 {
   font-size: 3.0rem;
   margin-bottom: 0.5rem;

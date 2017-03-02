@@ -120,10 +120,10 @@ $(function() {
   initCustomize('#sugar-level');
 
   // Cart Modal
-  $('modal-open').click(function(){
-    $('modal').show();
+  $('#modal-open').click(function(){
+    $('#modal').show();
   });
-  $('cancel').click(function(){
-    $('modal').hide();
+  $('#cancel').click(function(){
+    $('#modal').hide();
   });
 });
