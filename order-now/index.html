@@ -16,14 +16,14 @@
         <a href="javascript:void(0)" id="modal-open"><i class="fa fa-shopping-cart"></i></a>
         <a href="../login/index.html"><i class="fa fa-user"></i></a>
         <div class="hamburger"><i class="fa fa-bars"></i></div>
-        <form class="search">
+        <form action="index.html" class="search">
           <input type="text" class="basic-form inputSearch" placeholder="Search...">
           <i class="fa fa-search"></i>
           <div class="results">
             <div class="row product-list">
               <div class="product-overlay"></div>
               <div class="col-lg-2 col-med-2 col-sm-5">
-                  <img src="img/drinks/milk_tea.jpg" alt="Milk Tea" class="img-container">
+                  <img src="../img/drinks/milk_tea.jpg" alt="Milk Tea" class="img-container">
               </div>
               <div class="col-lg-10 col-med-10 col-sm-7">
                 <h4>Milk Tea</h4>
@@ -33,7 +33,7 @@
             <div class="row product-list">
               <div class="product-overlay"></div>
               <div class="col-lg-2 col-med-2 col-sm-5">
-                  <img src="img/drinks/mango_milk_tea.jpg" alt="Mango Milk Tea" class="img-container">
+                  <img src="../img/drinks/mango_milk_tea.jpg" alt="Mango Milk Tea" class="img-container">
               </div>
               <div class="col-lg-10 col-med-10 col-sm-7">
                 <h4>Mango Milk Tea</h4>
@@ -64,68 +64,170 @@
     <div class="pop-up-bg" id="modal">
       <div class="cart-container">
         <div class="cart-content">
-          <div class="row description-title">
-            <div class="col-lg-6 col-med-6 col-sm-6">
-              <h4>Shopping Cart</h4>
-            </div>
-            <div class="hide-small">
-              <div class="col-lg-2 col-med-2 col-sm-3">
-                <h5>Price</h5>
+          <form action="confirmation.html">
+            <div class="row description-title">
+              <div class="col-lg-6 col-med-6 col-sm-6">
+                <h4>Shopping Cart</h4>
               </div>
-              <div class="col-lg-2 col-med-2 col-sm-3">
-                <h5>Quantity</h5>
-              </div>
-              <div class="col-lg-2 col-med-2 col-sm-3">
-                <h5 class="text-right">Total</h5>
-              </div>
-            </div>
-          </div>
-          <div class="row product-list">
-            <div class="col-lg-2 col-med-4 col-sm-4">
-              <img src="img/drinks/milk_tea.jpg" class="img-container" alt="Dog Treats">
-            </div>
-            <div class="col-lg-4 col-med-8 col-sm-8">
-              <h4>Milk Tea</h4>
-              <h6>Size: Large</h6>
-              <h6>Ice Level: 50%</h6>
-              <h6>Sweetness: 50%</h6>
-              <h6>Toppings: Tapioca Pearls</h6>
-            </div>
-            <div class="add-margin-top">
-              <div class="col-lg-2 col-med-2 col-sm-2">
-                <h5>$5.99</h5>
-              </div>
-              <div class="col-lg-2 col-med-2 col-sm-2">
-                <input type="text" class="quantity-text-field" value="1">
-              </div>
-              <div class="col-lg-2 col-med-8 col-sm-8">
-                <h5 class="text-right">$5.99</h5>
+              <div class="hide-small">
+                <div class="col-lg-2 col-med-2 col-sm-3">
+                  <h5>Price</h5>
+                </div>
+                <div class="col-lg-2 col-med-2 col-sm-3">
+                  <h5>Quantity</h5>
+                </div>
+                <div class="col-lg-2 col-med-2 col-sm-3">
+                  <h5 class="text-right">Total</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="btn-checkout text-right">
-                <h6>Tax(10%) $0.59</h6>
-                <h4>Grand Total $6.50</h4>
+            <div class="row product-list">
+              <div class="col-lg-2 col-med-4 col-sm-4">
+                <img src="../img/drinks/milk_tea.jpg" class="img-container" alt="Milk Tea">
+              </div>
+              <div class="col-lg-4 col-med-8 col-sm-8">
+                <h4>Milk Tea</h4>
+                <h6>Size: Large</h6>
+                <h6>Ice Level: 50%</h6>
+                <h6>Sweetness: 50%</h6>
+                <h6>Toppings: Tapioca Pearls</h6>
+              </div>
+              <div class="add-margin-top">
+                <div class="col-lg-2 col-med-2 col-sm-2">
+                  <h5>$5.99</h5>
+                </div>
+                <div class="col-lg-2 col-med-2 col-sm-2">
+                  <input type="text" class="quantity-text-field" value="1">
+                </div>
+                <div class="col-lg-2 col-med-8 col-sm-8">
+                  <h5 class="text-right">$5.99</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="btn-checkout">
-              <div class="col-lg-6 col-md-6">
-                <button id="cancel" class="btn-form-reset">Cancel</button>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <input type="submit" class="btn-form-success" value="Proceed to Checkout">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-checkout text-right">
+                  <h6>Tax(10%) $0.59</h6>
+                  <h4>Grand Total $6.50</h4>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="btn-checkout">
+                <div class="col-lg-6 col-md-6">
+                  <button id="cancel" class="btn-form-reset">Cancel</button>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <input type="submit" class="btn-form-success" value="Proceed to Checkout">
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
     <!-- START MAIN CONTENT -->
-
+    <div class="row">
+    	<div class="col-lg-12">
+    		<h2 class="capitalize">Drink Menu</h2>
+    		<h3 class="capitalize">Popular Choices</h3>
+    	</div>
+    	<nav class="panels padder-top">
+        <div class="col-med-6 col-lg-7">
+          <a href="customize.html">
+          	<div class="panel-img product-img-milktea"></div>
+            <p>Regular Milk Tea</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-5">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-findus"></div>
+            <p>Milk Tea Slush</p>
+          </a>
+        </div>
+      </nav>
+    	<div class="col-lg-12">
+    		<h4 class="capitalize">Milk Tea $4.99</h4>
+    	</div>
+    	<nav class="panels padder-top">
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img product-img-milktea"></div>
+            <p>Regular Milk Tea</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-findus"></div>
+            <p>Milk Tea Slush</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-about"></div>
+            <p>Honey Milk Tea</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-about"></div>
+            <p>Taro Milk Tea</p>
+          </a>
+        </div>
+      </nav>
+      <div class="col-lg-12">
+    		<h4 class="capitalize">Black Tea $4.25</h4>
+    	</div>
+    	<nav class="panels padder-top">
+        <div class="col-med-6 col-lg-3 col-sm-4">
+          <a href="customize.html">
+          	<div class="panel-img product-img-blacktea"></div>
+            <p>Honey Black Tea</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-3 col-sm-8">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-findus"></div>
+            <p>Lemon Black Tea</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-about"></div>
+            <p>Mango Black Tea</p>
+          </a>
+        </div>
+      </nav>
+      <div class="col-lg-12">
+    		<h4 class="capitalize">Green Tea $4.25</h4>
+    	</div>
+    	<nav class="panels padder-top">
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-events"></div>
+            <p>Honey Green Tea</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-findus"></div>
+            <p>Kiwi Green Tea</p>
+          </a>
+        </div>
+        <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-about"></div>
+            <p>Mango Green Tea</p>
+          </a>
+        </div>
+         <div class="col-med-6 col-lg-3 col-sm-6">
+          <a href="customize.html">
+          	<div class="panel-img panel-img-about"></div>
+            <p>Pineapple Green Tea</p>
+          </a>
+        </div>
+      </nav>
+    </div>
     <!-- END MAIN CONTENT -->
     <!-- FOOTER -->
     <footer>

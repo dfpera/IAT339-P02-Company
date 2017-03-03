@@ -16,7 +16,7 @@
         <a href="javascript:void(0)" id="modal-open"><i class="fa fa-shopping-cart"></i></a>
         <a href="login/index.html"><i class="fa fa-user"></i></a>
         <div class="hamburger"><i class="fa fa-bars"></i></div>
-        <form class="search">
+        <form action="order-now/index.html" class="search">
           <input type="text" class="basic-form inputSearch" placeholder="Search...">
           <i class="fa fa-search"></i>
           <div class="results">
@@ -64,84 +64,88 @@
     <div class="pop-up-bg" id="modal">
       <div class="cart-container">
         <div class="cart-content">
-          <div class="row description-title">
-            <div class="col-lg-6 col-med-6 col-sm-6">
-              <h4>Shopping Cart</h4>
-            </div>
-            <div class="hide-small">
-              <div class="col-lg-2 col-med-2 col-sm-3">
-                <h5>Price</h5>
+          <form action="order-now/confirmation.html">
+            <div class="row description-title">
+              <div class="col-lg-6 col-med-6 col-sm-6">
+                <h4>Shopping Cart</h4>
               </div>
-              <div class="col-lg-2 col-med-2 col-sm-3">
-                <h5>Quantity</h5>
-              </div>
-              <div class="col-lg-2 col-med-2 col-sm-3">
-                <h5 class="text-right">Total</h5>
-              </div>
-            </div>
-          </div>
-          <div class="row product-list">
-            <div class="col-lg-2 col-med-4 col-sm-4">
-              <img src="img/drinks/milk_tea.jpg" class="img-container" alt="Dog Treats">
-            </div>
-            <div class="col-lg-4 col-med-8 col-sm-8">
-              <h4>Milk Tea</h4>
-              <h6>Size: Large</h6>
-              <h6>Ice Level: 50%</h6>
-              <h6>Sweetness: 50%</h6>
-              <h6>Toppings: Tapioca Pearls</h6>
-            </div>
-            <div class="add-margin-top">
-              <div class="col-lg-2 col-med-2 col-sm-2">
-                <h5>$5.99</h5>
-              </div>
-              <div class="col-lg-2 col-med-2 col-sm-2">
-                <input type="text" class="quantity-text-field" value="1">
-              </div>
-              <div class="col-lg-2 col-med-8 col-sm-8">
-                <h5 class="text-right">$5.99</h5>
+              <div class="hide-small">
+                <div class="col-lg-2 col-med-2 col-sm-3">
+                  <h5>Price</h5>
+                </div>
+                <div class="col-lg-2 col-med-2 col-sm-3">
+                  <h5>Quantity</h5>
+                </div>
+                <div class="col-lg-2 col-med-2 col-sm-3">
+                  <h5 class="text-right">Total</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="btn-checkout text-right">
-                <h6>Tax(10%) $0.59</h6>
-                <h4>Grand Total $6.50</h4>
+            <div class="row product-list">
+              <div class="col-lg-2 col-med-4 col-sm-4">
+                <img src="img/drinks/milk_tea.jpg" class="img-container" alt="Milk Tea">
+              </div>
+              <div class="col-lg-4 col-med-8 col-sm-8">
+                <h4>Milk Tea</h4>
+                <h6>Size: Large</h6>
+                <h6>Ice Level: 50%</h6>
+                <h6>Sweetness: 50%</h6>
+                <h6>Toppings: Tapioca Pearls</h6>
+              </div>
+              <div class="add-margin-top">
+                <div class="col-lg-2 col-med-2 col-sm-2">
+                  <h5>$5.99</h5>
+                </div>
+                <div class="col-lg-2 col-med-2 col-sm-2">
+                  <input type="text" class="quantity-text-field" value="1">
+                </div>
+                <div class="col-lg-2 col-med-8 col-sm-8">
+                  <h5 class="text-right">$5.99</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="btn-checkout">
-              <div class="col-lg-6 col-md-6">
-                <button id="cancel" class="btn-form-reset">Cancel</button>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <input type="submit" class="btn-form-success" value="Proceed to Checkout">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-checkout text-right">
+                  <h6>Tax(10%) $0.59</h6>
+                  <h4>Grand Total $6.50</h4>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="btn-checkout">
+                <div class="col-lg-6 col-md-6">
+                  <button id="cancel" class="btn-form-reset">Cancel</button>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <input type="submit" class="btn-form-success" value="Proceed to Checkout">
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
     <!-- START MAIN CONTENT -->
-    <section id="#id">
-      <!-- TODO: Add these citations
-            1. Font Awesome (http://fontawesome.io/)
-            2. Bootstrap (http://getbootstrap.com/components/#labels)
-            3. Banner Pic (http://www.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/restaurants/foodie%20guide/bubble-tea-1920x595.jpg)
-            4. Poduct Pics (http://modifylifestyle.com/wp-content/uploads/2014/06/bubble-tea-bellingham.jpg)
-            5. Location pics (https://lh3.googleusercontent.com/proxy/OLbH43VicrG0f8vktIw2tDmLL1o6ZDLS1BzTdirNOd8y3IuwC4wDjLsmzVKuJ5CgWTPwps-TYxSuGY4O18ivKGTHXiEHgRDhQ2ZeHfmlutZJF9SimV0JUPWWk68RZMmNbxZsYhTk5bxbwGlhmD-fEbFWcLGVHQ=w408-h305)
-            6. Location Pics (https://lh4.googleusercontent.com/proxy/mFQdkBHFJ2Z8Rgd6g2o48DBKBEa9w9fxv2ygyw9v1usMToB-y8LvGRtpTXdlJaQh5Ii5AUCdlzV8FINQzCeloIUbWjhjL04P4Ig3sWLAclPqthsXRa1g6iBHr_RvADFgnksjqYW2cTKdcJ4_A6uzjAgSVJ1p2w=w408-h305)
-            7. Location Pics (https://lh3.googleusercontent.com/-o6SP-K6TfS8/WGRR96W6OgI/AAAAAAAAiIQ/fZA5qWiwBdI1_2r61UDim6fbJneMJx8uACLIB/s408-k-no/)
-     -->
-      <p>"Biofield Energies." Palette / Biofield Energies :: COLOURlovers. N.p., n.d. Web. 26 Jan. 2017. &lt;http://www.colourlovers.com/palette/1601811/Biofield_Energies&gt;.</p>
-      <p>"Boost of energy." Palette / boost of energy :: COLOURlovers. N.p., n.d. Web. 26 Jan. 2017. &lt;http://www.colourlovers.com/palette/1377020/boost_of_energy&gt;.</p>
-      <p>"Google Fonts." Google Fonts.  Fonts, n.d. Web. 26 Jan. 2017. &lt;https://fonts.google.com/specimen/Roboto&gt;.</p>
-      <p>"Google Fonts." Google Fonts.  Fonts, n.d. Web. 26 Jan. 2017. &lt;https://fonts.google.com/specimen/Quicksand&gt;.</p>
-      <p>"Ocean sand." Palette / Ocean sand :: COLOURlovers. N.p., n.d. Web. 26 Jan. 2017. &lt;http://www.colourlovers.com/palette/2094306/Ocean_sand?widths=1&gt;.<br>"Welcome to placehold.it A quick and simple image placeholder service." Placehold.it - Quick and simple image placeholders. N.p., n.d. Web. 26 Jan. 2017.<p>
-    </section>
+    <div class="row">
+      <section id="#id" class="col-sm-12 col-med-12">
+        <!-- TODO: Add these citations
+              1. Font Awesome (http://fontawesome.io/)
+              2. Bootstrap (http://getbootstrap.com/components/#labels)
+              3. Banner Pic (http://www.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/restaurants/foodie%20guide/bubble-tea-1920x595.jpg)
+              4. Poduct Pics (http://modifylifestyle.com/wp-content/uploads/2014/06/bubble-tea-bellingham.jpg)
+              5. Location pics (https://lh3.googleusercontent.com/proxy/OLbH43VicrG0f8vktIw2tDmLL1o6ZDLS1BzTdirNOd8y3IuwC4wDjLsmzVKuJ5CgWTPwps-TYxSuGY4O18ivKGTHXiEHgRDhQ2ZeHfmlutZJF9SimV0JUPWWk68RZMmNbxZsYhTk5bxbwGlhmD-fEbFWcLGVHQ=w408-h305)
+              6. Location Pics (https://lh4.googleusercontent.com/proxy/mFQdkBHFJ2Z8Rgd6g2o48DBKBEa9w9fxv2ygyw9v1usMToB-y8LvGRtpTXdlJaQh5Ii5AUCdlzV8FINQzCeloIUbWjhjL04P4Ig3sWLAclPqthsXRa1g6iBHr_RvADFgnksjqYW2cTKdcJ4_A6uzjAgSVJ1p2w=w408-h305)
+              7. Location Pics (https://lh3.googleusercontent.com/-o6SP-K6TfS8/WGRR96W6OgI/AAAAAAAAiIQ/fZA5qWiwBdI1_2r61UDim6fbJneMJx8uACLIB/s408-k-no/)
+       -->
+        <p>"Biofield Energies." Palette / Biofield Energies :: COLOURlovers. N.p., n.d. Web. 26 Jan. 2017. &lt;http://www.colourlovers.com/palette/1601811/Biofield_Energies&gt;.</p>
+        <p>"Boost of energy." Palette / boost of energy :: COLOURlovers. N.p., n.d. Web. 26 Jan. 2017. &lt;http://www.colourlovers.com/palette/1377020/boost_of_energy&gt;.</p>
+        <p>"Google Fonts." Google Fonts.  Fonts, n.d. Web. 26 Jan. 2017. &lt;https://fonts.google.com/specimen/Roboto&gt;.</p>
+        <p>"Google Fonts." Google Fonts.  Fonts, n.d. Web. 26 Jan. 2017. &lt;https://fonts.google.com/specimen/Quicksand&gt;.</p>
+        <p>"Ocean sand." Palette / Ocean sand :: COLOURlovers. N.p., n.d. Web. 26 Jan. 2017. &lt;http://www.colourlovers.com/palette/2094306/Ocean_sand?widths=1&gt;.<br>"Welcome to placehold.it A quick and simple image placeholder service." Placehold.it - Quick and simple image placeholders. N.p., n.d. Web. 26 Jan. 2017.<p>
+      </section>
+    </div>
     <!-- END MAIN CONTENT -->
     <!-- FOOTER -->
     <footer>
