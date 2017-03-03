@@ -137,12 +137,13 @@ $(function() {
    $('#confirm-open').click(function(){
     $('#confirm-order').show();
   });
-  $('#reviews-close').click(function(){
-    $('#reviews').hide();
+  $('#cancel-order').click(function(){
+    $('#confirm-order').hide();
   });
   //Closing Modal Function
   $('.pop-up-bg').click(function(){
 	  $('#reviews').hide();
 	  $('#modal').hide();
+	  $('#confirm-order').hide();
   });
 });
