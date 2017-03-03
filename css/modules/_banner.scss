@@ -2,8 +2,14 @@
 	position:relative;
 	height:70vh;
 	width:100%;
-	overflow: hidden;	
-	
+	overflow: hidden;
+}
+
+.banner-container.short {
+	height: 20vh;
+}
+.banner-container.short .img-banner {
+	background-position: center;
 }
 
 .text-vertical{
