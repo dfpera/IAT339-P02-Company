@@ -126,10 +126,23 @@ $(function() {
   $('#cancel').click(function(){
     $('#modal').hide();
   });
-   $('#review-open').click(function(){
+  //Review Modal
+  $('#review-open').click(function(){
     $('#reviews').show();
   });
   $('#reviews-close').click(function(){
     $('#reviews').hide();
+  });
+  //Confirm Order Modal
+   $('#confirm-open').click(function(){
+    $('#confirm-order').show();
+  });
+  $('#reviews-close').click(function(){
+    $('#reviews').hide();
+  });
+  //Closing Modal Function
+  $('.pop-up-bg').click(function(){
+	  $('#reviews').hide();
+	  $('#modal').hide();
   });
 });

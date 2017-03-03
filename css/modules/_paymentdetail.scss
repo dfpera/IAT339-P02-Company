@@ -1,0 +1,17 @@
+.option-box{
+	padding:1rem;
+	padding-top:1.5rem;
+	padding-bottom:1.5rem;
+	background-color:$light-grey-bg;
+	border-radius:5px;
+	margin-top:1rem;
+	margin-bottom:1rem;	
+}
+
+
+.disabled{
+	position:absolute;
+	background:$medium-grey-bg;
+	height:100%;
+	width:100%;
+}

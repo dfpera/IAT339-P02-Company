@@ -42,19 +42,26 @@ nav.panels a {
   display: block;
   -webkit-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out;
-  height:250px;
-/*
-  border-radius:5px;
-  overflow:hidden;
-*/
+  height:auto;
   background:rgba(0,0,0,0.1);
- /*  background-color:rgba(0,0,0,0.2); */
- /* used http://www.colorzilla.com/gradient-editor/ to generate gradient*/
-/* background: rgba(254,187,187,0.3); */ /* Old browsers */
-/* background: -moz-linear-gradient(-45deg, rgba(254,187,187,0.3) 0%, rgba(254,144,144,0.3) 45%, rgba(255,92,92,0.3) 100%); */ /* FF3.6-15 */
-/* background: -webkit-linear-gradient(-45deg, rgba(254,187,187,0.5) 0%,rgba(254,144,144,0.5) 45%,rgba(255,92,92,0.3) 100%); */ /* Chrome10-25,Safari5.1-6 */
-/* background: linear-gradient(135deg, rgba(254,187,187,0.3) 0%,rgba(254,144,144,0.3) 45%,rgba(255,92,92,0.3) 100%); */ /* W3C, IE10+, FF16+, Chrome26+, 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+@media #{$large-break}{
+	nav.panels a {
+		height:300px;
+	}
+}
+
+@media #{$medium-break}{
+	nav.panels a {
+		height:250px;
+	}
+}
+
+@media #{$small-break}{
+	nav.panels a {
+		height:200px;
+	}
 }
 
 nav.panels a:hover,
@@ -141,7 +148,7 @@ nav.icons a > p {
 }
 
 .panel-img-findus{
-	background-image: url(https://janetennet.files.wordpress.com/2013/09/img_3240.jpg);
+	background-image: url(https://static.pexels.com/photos/33488/navigation-car-drive-road.jpg);
 }
 
 .panel-img-about{
