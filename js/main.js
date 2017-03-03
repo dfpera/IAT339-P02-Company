@@ -130,6 +130,6 @@ $(function() {
     $('#reviews').show();
   });
   $('#reviews-close').click(function(){
-    $('reviews').hide();
+    $('#reviews').hide();
   });
 });
