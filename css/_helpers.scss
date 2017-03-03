@@ -35,3 +35,11 @@
 	position:relative;
 	width:100%;
 }
+
+
+.border-lines{
+	border-top:1px solid $light-grey-bg;
+	border-bottom:1px solid $light-grey-bg;
+	padding-top:1.5rem;
+	padding-bottom:1.5rem;
+}

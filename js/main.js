@@ -126,4 +126,10 @@ $(function() {
   $('#cancel').click(function(){
     $('#modal').hide();
   });
+   $('#review-open').click(function(){
+    $('#reviews').show();
+  });
+  $('#reviews-close').click(function(){
+    $('reviews').hide();
+  });
 });

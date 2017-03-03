@@ -61,7 +61,7 @@
 			</nav>
     </header>
 
-<!-- <<<<<<< Updated upstream -->
+
     <!-- Cart -->
     <div class="pop-up-bg" id="modal">
       <div class="cart-container">
@@ -140,27 +140,99 @@
 				<img src="http://honestlyyum.com/wp-content/uploads/2015/10/pumpkin.spice_.bubble.milk_.tea_.with_.boba_.2.1.jpg" class="img-stretch">
 			</div>
 			<div class="col-lg-6">
-				<h2 class="capitalize">Regular Milk Tea</h2>
-				<h4 class="capitalize">Drink Description</h4>
-				<p>Our milk teas are fragrant and filled with the freshest ingredient for the best taste possible. This milk tea is not only delicious, but also soothing! It's a choice drink for a cold day or just for sitting around. </p>
-				<h5>
-		    	<span class="review-active">
-			    	<span class="fa fa-star"aria-hidden="true"></span>
-			    	<span class="fa fa-star"aria-hidden="true"></span>
-			    	<span class="fa fa-star"aria-hidden="true"></span>
-			    	<span class="fa fa-star"aria-hidden="true"></span>
-		    	</span>
-		    	<span class="fa fa-star review"aria-hidden="true"></span>
-		    	<span class="capitalize"><a href="#" class="text-link">Drink review (10)</a></span>
-		    </h5>
-		    <input type="submit" id="customize" class="btn-form-success" value="Order Now" >
+				<div class="col-lg-12">
+					<h2 class="capitalize">Roasted Milk Tea</h2>
+					<h4 class="capitalize">Drink Description</h4>
+					<p>Our milk teas are fragrant and filled with the freshest ingredient for the best taste possible. This milk tea is not only delicious, but also soothing! It's a choice drink for a cold day or just for sitting around. </p>
+					<div class="border-lines">
+						<h5>
+				    	<span class="review-active">
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+					    	<span class="fa fa-star"aria-hidden="true"></span>
+				    	</span>
+				    	<span class="fa fa-star review"aria-hidden="true"></span>
+				    	<span class="capitalize"><a href="javascript:void(0)" id="review-open" class="text-link">Drink review (10)</a></span>
+				    </h5>
+					</div>
+				</div>
+				<div class="col-lg-6">
+	        <div class="row ">
+        		<div id="size" class="dropdown">
+        			<h6>Drink Size</h6>
+        			<h5 class="capitalize">Regular</h5>
+        			<h5 class="dropdown-caret fa fa-caret-down" aria-hidden="true"></h5>
+        			<div class="dropdown-box">
+        				<p class="dropdown-content">Regular</p>
+        				<p class="dropdown-content">Large</p>
+        			</div>
+        		</div>
+        	</div>
+				</div>
+				<div class="col-lg-6">
+					 <div class="row ">
+        		<div id="ice-level" class="dropdown">
+        			<h6>Toppings</h6>
+        			<h5 class="capitalize">None</h5>
+        			<h5 class="dropdown-caret fa fa-caret-down" aria-hidden="true"></h5>
+        			<div class="dropdown-box">
+        				<p class="dropdown-content">None</p>
+        				<p class="dropdown-content">Tapioca Pearls</p>
+        				<p class="dropdown-content">Coconut Jelly</p>
+        				<p class="dropdown-content">Mango Star</p>
+        				<p class="dropdown-content">Grass</p>
+        			</div>
+        		</div>
+        	</div>		
+	      </div>
+				<div class="col-lg-6">
+					 <div class="row ">
+        		<div id="sugar-level" class="dropdown">
+        			<h6>Sugar Level</h6>
+        			<h5 class="capitalize">None</h5>
+        			<h5 class="dropdown-caret fa fa-caret-down" aria-hidden="true"></h5>
+        			<div class="dropdown-box">
+        				<p class="dropdown-content">None</p>
+        				<p class="dropdown-content">25%</p>
+        				<p class="dropdown-content">50%</p>
+        				<p class="dropdown-content">75%</p>
+        				<p class="dropdown-content">100%</p>
+        			</div>
+        		</div>
+	        </div>
+				</div>
+				<div class="col-lg-6">
+					 <div class="row ">
+        		<div id="ice-level" class="dropdown">
+        			<h6>Ice Level</h6>
+        			<h5 class="capitalize">None</h5>
+        			<h5 class="dropdown-caret fa fa-caret-down" aria-hidden="true"></h5>
+        			<div class="dropdown-box">
+        				<p class="dropdown-content">None</p>
+        				<p class="dropdown-content">25%</p>
+        				<p class="dropdown-content">50%</p>
+        				<p class="dropdown-content">75%</p>
+        				<p class="dropdown-content">100%</p>
+        			</div>
+        		</div>
+	        </div>
+				</div>
+		    <div class="col-lg-6 padder-top col-med-6 col-sm-12">
+			    <input type="submit" id="customize" class="btn-form-success" value="Add to cart" >
+		    </div>
+		    <div class="col-lg-6 padder-top padder-bottom col-med-6 col-sm-12">
+			    <input type="submit" id="customize" class="btn-form-reset" value="Share" >
+		    </div>
 			</div>
 		</div>
-		
-		 <div class="pop-up-bg" id="modal" style="display:inline">
+		<!--Review Modal-->
+		 <div class="pop-up-bg" id="reviews" >
       <div class="cart-container">
         <div class="cart-content">
 					<div class="row">
+						<!--Can't figure out hide function-->
+						<div class="fl-right"><h3><a href="javascript:void(0)" class="text-link" id="reviews-close">X</a></h3></div>
 			    	<h3>
 			    		<span class="capitalize">Milk Tea Reviews</span>
 			    		<span class="review-active">
@@ -231,19 +303,82 @@
         </div>
       </div>
     </div>
-
+<!--End of Modal-->
     
 <!--
     <div class="pop-up-bg" id="modal" style="display:inline">
       <div class="cart-container">
         <div class="cart-content">
-        	<div class="row">
-        		<h3>Customize Drink</h3>
-        	</div>
+        	<h3 class="capitalize">Customize</h3>
+					<div id="ice-level-big" class="row hide-sm">
+	        	<div class="col-lg-12">
+	        		<h4 class="padder-bottom">Ice Level</h4>
+	        	</div>
+	        	<div class="col-lg-2 col-med-4 col-sm-12">
+	        		<div class="panel-container active">
+	        			<div class="icon-container">
+	        				<img alt="No Ice" src="img/icons/none-active.png" class="img-placeholder">
+	        			</div>
+	        			<h5>None</h5>
+	        		</div>
+	        	</div>
+	        	<div class="col-lg-2 col-med-4 col-sm-12">
+	        		<div class="panel-container">
+	        			<div class="icon-container">
+	        				<img alt="25% Ice" src="img/icons/ice25.png" class="img-placeholder">
+	        			</div>
+	        			<h5>25%</h5>
+	        		</div>
+	        	</div>
+	        	<div class="col-lg-2 col-med-4 col-sm-12">
+	        		<div class="panel-container">
+	        			<div class="icon-container">
+	        				<img alt="50% Ice" src="img/icons/ice50.png" class="img-placeholder">
+	        			</div>
+	        			<h5>50%</h5>
+	        		</div>
+	        	</div>
+	        	<div class="col-lg-2 col-med-4 col-sm-12">
+	        		<div class="panel-container">
+	        			<div class="icon-container">
+	        				<img alt="75% Ice" src="img/icons/ice75.png" class="img-placeholder">
+	        			</div>
+	        			<h5>75%</h5>
+	        		</div>
+	        	</div>
+	        	<div class="col-lg-2 col-med-4 col-sm-12">
+	        		<div class="panel-container">
+	        			<div class="icon-container">
+	        				<img alt="100% Ice" src="img/icons/ice100.png" class="img-placeholder">
+	        			</div>
+	        			<h5>100%</h5>
+	        		</div>
+	        	</div>
+	        </div>
+	        <!-- Small Screen -->
+<!--
+	        <div class="row ">
+	        	<div class="col-lg-12">
+	        		<div id="ice-level" class="dropdown">
+	        			<h6>Ice Level</h6>
+	        			<h5 class="capitalize">None</h5>
+	        			<h5 class="dropdown-caret fa fa-caret-down" aria-hidden="true"></h5>
+	        			<div class="dropdown-box">
+	        				<p class="dropdown-content">None</p>
+	        				<p class="dropdown-content">25%</p>
+	        				<p class="dropdown-content">50%</p>
+	        				<p class="dropdown-content">75%</p>
+	        				<p class="dropdown-content">100%</p>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+
         </div>
       </div>
     </div>
 -->
+
 
     
     <!-- FOOTER -->

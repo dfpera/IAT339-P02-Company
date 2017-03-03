@@ -3,7 +3,8 @@
 	position:fixed;
 	background:rgba(41,41,41,0.8);
 	top:0px;
-	bottom:0px;
+	/* bottom:0px; */
+	
 	left:0px;
 	right:0px;
 	z-index: 1050;
@@ -14,6 +15,7 @@
 	position:relative;
 	margin:auto;
 	width:auto;
+	height:auto;
 	margin-top:auto;
 	margin-bottom:5rem;
 }
@@ -62,6 +64,9 @@
 	display:none;
 }
 
+#reviews{
+	display:none;
+}
 
 .cart-content{
   background: white;
