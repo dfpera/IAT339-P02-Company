@@ -61,14 +61,21 @@
 	border-radius:5px;
 	background:$light-grey-bg;
 	top:5rem;
+	-webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 9px rgba(0,0,0,0.2);
 }
 
 .dropdown-content{
 	padding-top:1rem;
 	padding-left:1rem;
 	padding-bottom:1rem;
+	margin-bottom:0;
 	border-bottom:1px solid $medium-grey-bg;
 	transition: background-color 0.5s ease;
+}
+
+.dropdown-content:hover, .dropdown-content:focus{
+	background:$medium-grey-bg;
 }
 
 .dropdown-box .dropdown-content:last-child{

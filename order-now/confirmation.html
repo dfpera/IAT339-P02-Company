@@ -68,7 +68,7 @@
     <div class="pop-up-bg" id="modal">
       <div class="cart-container">
         <div class="cart-content">
-          <form action="confirmation.html">
+          <form action="../login/index.html">
             <div class="row description-title">
               <div class="col-lg-6 col-med-6 col-sm-6">
                 <h4>Shopping Cart</h4>
@@ -131,6 +131,226 @@
       </div>
     </div>
     <!-- START MAIN CONTENT -->
+
+		<div class="row">
+			<div class="col-med-12">
+				<h2 class="capitalize">Order Form</h2>
+				<h4 class="capitalize padder-top">Select Pickup Location</h4>
+			</div>
+			<div class="col-med-12">
+				<!--
+<div class="product-list">
+					<h4 class="capitalize">Vancouver</h4>
+					<h6>
+						7604 242 Street
+						<br>
+						V42 3F9
+						<br>	
+						Canada
+					</h6>
+					
+				</div>
+-->
+			 <div class="row product-list">
+            <div class="product-overlay"></div>
+            <div class="col-lg-2 col-med-4 col-sm-5">
+                <img src="../img/location/vancouver.jpg" alt="" class="img-container">
+            </div>
+            <div class="col-lg-8 col-med-8 col-sm-7">
+              <p><span class="fa fa-map-marker" aria-hidden="true"></span>Nearest Location</p>
+              <h4>Vancouver</h4>
+              <h6>119 E King Edward Ave,<br>
+                Vancouver,<br>
+                BC V5V 2B8,<br>
+                Canada</h6>
+              <h6>Open 11am - 1am, 7 days a week.</h6>
+            </div>
+          </div>
+          <div class="row product-list">
+            <div class="product-overlay"></div>
+            <div class="col-lg-2 col-med-4 col-sm-5">
+                <img src="../img/location/downtown-vancouver.jpg" alt="" class="img-container">
+            </div>
+            <div class="col-lg-8 col-med-8 col-sm-7">
+              <h4>Downtown Vancouver</h4>
+              <h6>340 Robson St,<br>
+                Vancouver,<br>
+                BC V6B 2B2,<br>
+                Canada</h6>
+              <h6>Open 11am - 1am, 7 days a week.</h6>
+            </div>
+          </div>
+          <div class="row product-list">
+            <div class="product-overlay"></div>
+            <div class="col-lg-2 col-med-4 col-sm-5">
+                <img src="../img/location/burnaby.jpg" alt="" class="img-container">
+            </div>
+            <div class="col-lg-8 col-med-8 col-sm-7">
+              <h4>Burnaby</h4>
+              <h6>1287 Willingdon Ave,<br>
+                Burnaby,<br>
+                BC V5C 5H7,<br>
+                Canada</h6>
+              <h6>Open 11am - 1am, 7 days a week.</h6>
+            </div>
+          </div>
+        </div>
+
+
+
+			</div>
+		
+		</div>
+		
+		<div class="row padder-top">
+			<div class="col-med-12 col-lg-12 col-sm-12">
+				<h4 class="capitalize padder-bottom">Payment Details</h4>
+		<div class="row product-list">
+	        <div class="product-overlay"></div>
+	        <div class="col-lg-2 col-med-4 col-sm-5">
+	            <img src="http://www.mastercard.com/global/_assets/img/products/standard-cc-intro.png" alt="" class="img-container">
+	        </div>
+	        <div class="col-lg-8 col-med-8 col-sm-7">
+	          <h4>Master Card</h4>
+	          <h6>
+	          	13243255437537<br>
+							John Doe
+	          </h6>
+	        </div>
+	      </div>
+	      <div class="row product-list">
+	        <div class="product-overlay"></div>
+	         <div class="col-lg-2 col-med-4 col-sm-5">
+	            <img src="https://www.walmartmoneycard.com/cmsviews/walmart/assets/shared/blankplastictypeimage.png" alt="" class="img-container">
+	        </div>
+	        <div class="col-lg-8 col-med-8 col-sm-7">
+	          <h4><a href="#" class="text-link">+Add New Credit Card</a></h4>
+	        </div>
+	
+	      </div>
+	
+	    </div>
+	    </div>
+		</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-12 col-med-12 col-sm-12">
+				<div class="option-box ">
+					<div class="text-right padder-top">
+						<div class="col-md-12">
+							<h4 class="padder-bottom capitalize">Calculate Price</h4>
+							<p>Drink: $5.99</p>
+							<p>GST+PST(10%): +0.59</p>
+							<hr>
+							<h3>Grand Total $6.50</h3>
+						</div>
+					</div>
+					
+					<div class="row padder-top padder-bottom">
+						<div class="col-med-6 col-lg-6 col-sm-12">
+							<input type="submit" class="btn-form-reset" value="Cancel Order">
+						</div>
+						<div class="col-med-6 col-lg-6 col-sm-12">
+							<input type="submit" class="btn-form-success" id="confirm-open" value="Confirm order">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="pop-up-bg" id="confirm-order">
+      <div class="cart-container">
+        <div class="cart-content">
+          <div class="row description-title">
+            <div class="col-lg-12 col-med-12 col-sm-12">
+              <h2 class="capitalize">Confirm your order</h2>
+            </div>
+          </div>
+          <div class="row padder-top">
+          	<div class="col-lg-12">
+            	<h6 class="capitalize">Ordered Drinks</h6>
+            </div>
+          </div>
+          <div class="row product-list">
+            <div class="col-lg-2 col-med-4 col-sm-4">
+              <img src="../img/drinks/milk_tea.jpg" class="img-container" alt="Dog Treats">
+            </div>
+            <div class="col-lg-8 col-med-8 col-sm-8">
+              <h4>Milk Tea</h4>
+              <h6>Size: Large</h6>
+              <h6>Ice Level: 50%</h6>
+              <h6>Sweetness: 50%</h6>
+              <h6>Toppings: Tapioca Pearls</h6>
+            </div>
+            <div class="add-margin-top">
+              <div class="col-lg-2 col-med-8 col-sm-8">
+                <h5 class="text-right">$5.99</h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row padder-top">
+          	<div class="col-lg-12">
+            	<h6 class="capitalize">Pickup Location</h6>
+            </div>
+          </div>
+          <div class="row product-list">
+            <div class="col-lg-2 col-med-4 col-sm-4">
+              <img src="../img/location/vancouver.jpg" alt="" class="img-container">
+            </div>
+            <div class="col-lg-8 col-med-8 col-sm-8">
+              <h4>Vancouver</h4>
+              <h6>119 E King Edward Ave,<br>
+                Vancouver,<br>
+                BC V5V 2B8,<br>
+                Canada</h6>
+              <h6>Open 11am - 1am, 7 days a week.</h6>
+             </div>
+          </div>
+           <div class="row padder-top">
+          	<div class="col-lg-12">
+            	<h6 class="capitalize">Payment detail</h6>
+            </div>
+          </div>
+          <div class="row product-list">
+            <div class="col-lg-2 col-med-4 col-sm-4">
+              <img src="http://www.mastercard.com/global/_assets/img/products/standard-cc-intro.png" alt="" class="img-container">
+
+            </div>
+            <div class="col-lg-8 col-med-8 col-sm-8">
+							<h4>Master Card</h4>
+		          <h6>
+		          	13243255437537<br>
+								John Doe
+		          </h6>
+             </div>
+          </div>
+
+
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn-checkout text-right">
+                <h6>Tax(10%) $0.59</h6>
+                <h4>Grand Total $6.50</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-checkout">
+              <div class="col-lg-6 col-md-6">
+                <button id="cancel-order" class="btn-form-reset">Cancel</button>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <input type="submit" class="btn-form-success" value="pay now">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- END MAIN CONTENT -->
     <!-- FOOTER -->
