@@ -6,5 +6,5 @@ css/main\.css
 \.DS_Store
 
 js/javascript\.js
-
-style-guide\.html
+main.css
+main.css.map
