@@ -54,10 +54,28 @@ function initCustomize(menuID) {
   });
 
   // Customize (small)
-  $(menuID).click(function(){
-    $(this).find('.dropdown-box').slideToggle();
-    $(this).find('.dropdown-caret').toggleClass('fa-caret-down');
-    $(this).find('.dropdown-caret').toggleClass('fa-caret-up');
+  $(menuID).click(function(event) {
+    event.stopPropagation();
+    if ($(this).attr("data-toggle") === "open") {
+      $(this).find('.dropdown-box').slideUp();
+      $(this).find('.dropdown-caret').addClass('fa-caret-down');
+      $(this).find('.dropdown-caret').removeClass('fa-caret-up');
+      $(this).attr("data-toggle", "close");
+    } else {
+      // Close other menus
+      $('.dropdown').each(function() {
+        if($(this).attr("data-toggle") === "open") {
+          $(this).find('.dropdown-box').slideUp();
+          $(this).find('.dropdown-caret').addClass('fa-caret-down');
+          $(this).find('.dropdown-caret').removeClass('fa-caret-up');
+          $(this).attr("data-toggle", "close");
+        }
+      });
+      $(this).find('.dropdown-box').slideDown();
+      $(this).find('.dropdown-caret').removeClass('fa-caret-down');
+      $(this).find('.dropdown-caret').addClass('fa-caret-up');
+      $(this).attr("data-toggle", "open");
+    }
   });
   // Menu Options
   $(menuID + ' .dropdown-box > .dropdown-content').click(function() {
@@ -118,6 +136,17 @@ $(function() {
   initCustomize('#toppings');
   initCustomize('#ice-level');
   initCustomize('#sugar-level');
+  // Closing menu when anything other than the dropdowns are clicked
+  $(document).not($('.dropdown')).click(function() {
+    $('.dropdown').each(function() {
+      if($(this).attr("data-toggle") === "open") {
+        $(this).find('.dropdown-box').slideUp();
+        $(this).find('.dropdown-caret').addClass('fa-caret-down');
+        $(this).find('.dropdown-caret').removeClass('fa-caret-up');
+        $(this).attr("data-toggle", "close");
+      }
+    });
+  });
 
   // Cart Modal
   $('#modal-open').click(function(){
