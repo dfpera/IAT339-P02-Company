@@ -1,5 +1,4 @@
 /*! Header and main navigation should go here */
-// TODO: Implement an active class for the menu
 header {
   position: relative;
   padding: 0 0.75rem;
@@ -9,7 +8,7 @@ header {
 
 // Icons
 header > .icons {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
 }
 header > .icons i {
   color: $nav-color;
@@ -26,7 +25,7 @@ header > .icons > a,
 header > .icons > div {
   display: inline-block;
   float: right;
-  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 // Navigation Menu
