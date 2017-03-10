@@ -38,7 +38,7 @@
 }
 
 .swatch.footer > .color {
-  background-color: $nav-color;
+  background-color: #f1f1f1;
 }
 
 .swatch.font-dark > .color {
@@ -49,6 +49,18 @@
   background-color: $font-light;
 }
 
-.swatch.panels > .color {
+.swatch.btn-bg > .color {
+  background-color: #F2DC3E;
+}
+
+.swatch.btn-bg-hover > .color {
   background-color: #FFECC4;
+}
+
+.swatch.text-link-color > .color {
+  background-color: #1BB3BA;
+}
+
+.swatch.button-color > .color {
+  background-color: #BC8412;
 }
