@@ -172,11 +172,14 @@ $(function() {
     e.preventDefault();
     $('#confirm-order').hide();
   });
+  $('.cart-container').click(function() {
+    event.stopPropagation();
+  });
   //Closing Modal Function
-  $('.pop-up-bg').click(function(){
-	  $('#reviews').hide();
-	  $('#modal').hide();
-	  $('#confirm-order').hide();
+  $('.pop-up-bg').click(function(e){
+      $('#reviews').hide();
+  	  $('#modal').hide();
+  	  $('#confirm-order').hide();
   });
 
   //active state for location
