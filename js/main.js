@@ -175,4 +175,21 @@ $(function() {
 	  $('#modal').hide();
 	  $('#confirm-order').hide();
   });
+  
+  //active state for location
+  $('.location').click(function(){
+	  $('.location').removeClass('active-state');
+	  $(this).addClass('active-state');
+  });
+  
+  //active state for payment option
+  $('.mastercard').click(function(){
+	  $('mastercard').remove('active-state');
+	  $(this).addClass('active-state');
+	  //rules to enable confirm button
+	  if(($('.location') && $('.mastercard')).hasClass('active-state')){
+		  $('input#confirm-open').prop('disabled', false);
+	  }
+  });
+  
 });

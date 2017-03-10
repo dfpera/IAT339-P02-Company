@@ -38,6 +38,15 @@
   color: #D28C41;
 }
 
+input[type="submit"]:disabled {
+    opacity:0.5;
+}
+
+input[type="submit"]:enabled{
+    opacity:1;
+}
+
+
 .quantity-text-field{
 	width:100%;
 	border-radius: 3px;
