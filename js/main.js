@@ -152,21 +152,24 @@ $(function() {
   $('#modal-open').click(function(){
     $('#modal').show();
   });
-  $('#cancel').click(function(){
+  $('#cancel').click(function(e){
+    e.preventDefault();
     $('#modal').hide();
   });
   //Review Modal
   $('#review-open').click(function(){
     $('#reviews').show();
   });
-  $('#reviews-close').click(function(){
+  $('#reviews-close').click(function(e){
+    e.preventDefault();
     $('#reviews').hide();
   });
   //Confirm Order Modal
    $('#confirm-open').click(function(){
     $('#confirm-order').show();
   });
-  $('#cancel-order').click(function(){
+  $('#cancel-order').click(function(e){
+    e.preventDefault();
     $('#confirm-order').hide();
   });
   //Closing Modal Function
@@ -175,13 +178,13 @@ $(function() {
 	  $('#modal').hide();
 	  $('#confirm-order').hide();
   });
-  
+
   //active state for location
   $('.location').click(function(){
 	  $('.location').removeClass('active-state');
 	  $(this).addClass('active-state');
   });
-  
+
   //active state for payment option
   $('.mastercard').click(function(){
 	  $('mastercard').remove('active-state');
@@ -191,5 +194,5 @@ $(function() {
 		  $('input#confirm-open').prop('disabled', false);
 	  }
   });
-  
+
 });

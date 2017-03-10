@@ -33,9 +33,18 @@
 .btn-form-reset {
   background-color: $btn-nav-secondary-bg-color;
   color: $btn-secondary-color;
+  border-radius: 0.25em;
+  border: $btn-nav-bg-color solid 0.15rem;
+  transition: background-color 0.5s ease-in;
 }
 .btn-form-reset:hover, .btn-form-reset:focus {
   color: #D28C41;
+  background-color: #FFECC4;
+  border-color: #FFECC4;
+}
+
+.share {
+  border: none;
 }
 
 input[type="submit"]:disabled {
@@ -75,14 +84,14 @@ input[type="submit"]:enabled{
 }
 
 .post-btn-container{
-	
+
 	/* bottom:0; */
 	top:0;
 	right:0px;
-	width:auto;	
+	width:auto;
 	/* padding:1rem; */
 	text-align:center;
-	
+
 }
 
 @media #{$small-break}{
@@ -102,4 +111,3 @@ input[type="submit"]:enabled{
 		width:20%;
 	}
 }
-
