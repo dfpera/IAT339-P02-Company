@@ -197,5 +197,10 @@ $(function() {
 		  $('input#confirm-open').prop('disabled', false);
 	  }
   });
+  
+  //add to cart feedback
+  $('#customize').click(function(){
+	  $('.fa-shopping-cart').addClass('item-added');
+  });
 
 });
